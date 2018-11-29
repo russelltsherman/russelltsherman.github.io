@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>faq on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/faq/</link>
+    <description>Recent content in faq on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>aws-vault outputs `&#39;aws_access_key_id&#39;` message and does nothing</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</guid>
+      <description>Question When calling aws-vault exec or using assume-role in geodesic, a single line is output that simply says:
+&#39;aws_access_key_id&#39; Answer This is usually because there&amp;rsquo;s a [default] section in your ~/.aws/config. Remove that and it should start to work.</description>
+    </item>
+    
+    <item>
+      <title>aws-vault: error: Failed to get credentials ... aes.KeyUnwrap(): integrity check failed.</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</guid>
+      <description>Question When calling aws-vault exec or attempting to assume-role, I get the following error:
+Enter passphrase to unlock /conf/.awsvault/keys/: aws-vault: error: Failed to get credentials for peerstreet (source profile for cp-root-admin): aes.KeyUnwrap(): integrity check failed. Answer This horribly cryptic error message is a cryptographers way of saying &amp;ldquo;wrong password&amp;rdquo;. Just try running the command again, but this time enter the correct password. =)</description>
+    </item>
+    
+    <item>
+      <title>aws-vault: error: Failed to start credential server</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</guid>
+      <description>Question When running aws-vault or assume-role, I get the following error:
+aws-vault: error: Failed to start credential server: listen tcp 127.0.0.1:9099: bind: address already in use Answer This is usually caused by another geodesic shell running. This happens because aws-vault server can only be run once. Try exiting your other geodesic shell.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshooting on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>aws-vault outputs `&#39;aws_access_key_id&#39;` message and does nothing</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</guid>
+      <description>Question When calling aws-vault exec or using assume-role in geodesic, a single line is output that simply says:
+&#39;aws_access_key_id&#39; Answer This is usually because there&amp;rsquo;s a [default] section in your ~/.aws/config. Remove that and it should start to work.</description>
+    </item>
+    
+    <item>
+      <title>aws-vault: error: Failed to get credentials ... aes.KeyUnwrap(): integrity check failed.</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</guid>
+      <description>Question When calling aws-vault exec or attempting to assume-role, I get the following error:
+Enter passphrase to unlock /conf/.awsvault/keys/: aws-vault: error: Failed to get credentials for peerstreet (source profile for cp-root-admin): aes.KeyUnwrap(): integrity check failed. Answer This horribly cryptic error message is a cryptographers way of saying &amp;ldquo;wrong password&amp;rdquo;. Just try running the command again, but this time enter the correct password. =)</description>
+    </item>
+    
+    <item>
+      <title>aws-vault: error: Failed to start credential server</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</guid>
+      <description>Question When running aws-vault or assume-role, I get the following error:
+aws-vault: error: Failed to start credential server: listen tcp 127.0.0.1:9099: bind: address already in use Answer This is usually caused by another geodesic shell running. This happens because aws-vault server can only be run once. Try exiting your other geodesic shell.</description>
+    </item>
+    
+    <item>
+      <title>Calling `chamber write` triggers `Error: InvalidKeyId: ... parameter_store_key is not found.`</title>
+      <link>https://russelltsherman.github.io/troubleshooting/calling-chamber-write-triggers-error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/calling-chamber-write-triggers-error/</guid>
+      <description>Question Error: InvalidKeyId: Alias arn:aws:kms:us-west-2:671362398325:alias/parameter_store_key is not found. (Service: AWSKMS; Status Code: 400; Error Code: NotFoundException; Request ID: bf9b3240-39f5-11e8-921d-e9dc98bd5b1a) Answer Per the documentation, Chamber expects to find a KMS key with alias parameter_store_key in the account that you are writing/reading secrets.
+You can follow the AWS KMS documentation to create your key, and follow this guide to set up your alias.
+We recommend using Terraform:
+resource &amp;quot;aws_kms_key&amp;quot; &amp;quot;parameter_store&amp;quot; { description = &amp;quot;Parameter store kms master key&amp;quot; deletion_window_in_days = 10 enable_key_rotation = true } resource &amp;quot;aws_kms_alias&amp;quot; &amp;quot;parameter_store_alias&amp;quot; { name = &amp;quot;alias/parameter_store_key&amp;quot; target_key_id = &amp;quot;${aws_kms_key.</description>
+    </item>
+    
+    <item>
+      <title>Error: UPGRADE FAILED: failed to create resource: namespaces &#34;...&#34; not found</title>
+      <link>https://russelltsherman.github.io/troubleshooting/helm-upgrade-failed-to-create-resource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/helm-upgrade-failed-to-create-resource/</guid>
+      <description>Question Helm Upgrade Failed &amp;#34;cloudposse-incubator&amp;#34; has been added to your repositories exec: helm repo update --kube-context us-west-2-staging-example-com Hang tight while we grab the latest from your chart repositories... ...Successfully got an update from the &amp;#34;cloudposse-incubator&amp;#34; chart repository ...Successfully got an update from the &amp;#34;stable&amp;#34; chart repository Update Complete. ⎈ Happy Helming!⎈ exec: helm upgrade --install pr-1627-app-pull-secret cloudposse-incubator/dockercfg --version 0.1.0 --namespace pr-1627-app --wait --timeout=600 --force --reset-values --kube -context us-west-2-staging-example-com Error: UPGRADE FAILED: failed to create resource: namespaces &amp;#34;pr-1627-app&amp;#34; not found err: exit status 1 [SYSTEM] Error: Failed to run freestyle step: Deploy backing services with helmfile (for unlimited staging environments); caused by NonZeroExitCodeError: Container for step title: Deploy backing services with helmfile (for unlimited staging environments), step type: freestyle, operation: Freestyle step failed with exit code: 1</description>
+    </item>
+    
+    <item>
+      <title>Running `init-terraform` fails: `Permission denied (publickey)`</title>
+      <link>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</guid>
+      <description>Question When running init-terraform, it fails while trying to fetch a private github repository.
+init-terraform Mounted buckets Filesystem Mounted on eg-staging-terraform-state /secrets/tf Initializing modules... - module.identity Getting source &amp;quot;git::git@github.com:cloudposse/terraform-aws-account-metadata.git?ref=tags/0.1.0&amp;quot; Error downloading modules: Error loading modules: error downloading &#39;ssh://git@github.com/cloudposse/terraform-aws-account-metadata.git?ref=tags%2F0.1.0&#39;: /usr/bin/git exited with 128: Cloning into &#39;.terraform/modules/ce64520f6f20f6ef2bd2674d5f00db4d&#39;... Warning: Permanently added the RSA host key for IP address &#39;194.31.252.103&#39; to the list of known hosts. Permission denied (publickey). fatal: Could not read from remote repository.</description>
+    </item>
+    
+    <item>
+      <title>Terraform fails while applying plan: resource does not have attribute</title>
+      <link>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</guid>
+      <description>Question While attempting to run terraform apply, the execution failed with the following error:
+Error: Error applying plan: 6 error(s) occurred: * module.aurora_postgres.module.dns_replicas.output.hostname: Resource &#39;aws_route53_record.default&#39; does not have attribute &#39;fqdn&#39; for variable &#39;aws_route53_record.default.*.fqdn&#39; * module.aurora_postgres.output.password: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;master_password&#39; for variable &#39;aws_rds_cluster.default.*.master_password&#39; * module.aurora_postgres.output.user: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;master_username&#39; for variable &#39;aws_rds_cluster.default.*.master_username&#39; * module.aurora_postgres.output.cluster_name: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;cluster_identifier&#39; for variable &#39;aws_rds_cluster.default.*.cluster_identifier&#39; * module.</description>
+    </item>
+    
+  </channel>
+</rss>

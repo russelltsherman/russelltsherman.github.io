@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Chamber</title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/syntax.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../css/custom.css" />
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    .article p,
+    .article ul,
+    .article ol,
+    .article blockquote {
+      max-width: 45em;
+    }
+
+    .article p:first-child {
+      font-size: 1.25em;
+      font-weight: 300;
+      max-width: 36em;
+       
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="../../">Russell T Sherman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../about/" title="">About</a>
+            </li>
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../tools/" title="">Tools</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+<nav aria-label="breadcrumb navbar-dark">
+    <ol class="breadcrumb">
+        
+
+
+
+
+
+
+
+ <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/'>Home</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/tools/'>Tools</a></li> <li class='breadcrumb-item active' aria-current='page'>Chamber</li>
+
+
+
+
+
+
+    </ol>
+</nav>
+
+
+<div class="container">
+  <h1>Chamber</h1>
+
+  <p>Chamber is a CLI for managing secrets stored
+in <a href="https://aws.amazon.com/systems-manager/features/#Parameter_Store">AWS Systems Manager Parameter Store</a>.</p>
+<p>In the article <a href="https://aws.amazon.com/blogs/mt/the-right-way-to-store-secrets-using-parameter-store/">The Right Way to Store Secrets using Parameter Store</a>, <code>AWS</code> recommends using <code>chamber</code> for secrets management.</p>
+<h1 id="configuration">Configuration</h1>
+<div class="dialog warning">
+  <h4 class="dialog__title"><i class="fa fa-info-circle dialog__icon" aria-hidden="true"></i>Prerequisites</h4>
+  <p class="dialog__text">This assumes you&rsquo;ve followed the <a href="">AWS KMS</a> guide which describes using Terraform to easily provision KMS+SSM resources for chamber.</p>
+</div>
+<h2 id="chamber-with-geodesic">Chamber with Geodesic</h2>
+<p>From the Terraform outputs <a href="">AWS KMS</a> copy the <code>chamber_kms_key_alias_name</code> into the ENV var <code>CHAMBER_KMS_KEY_ALIAS</code> in the geodesic module`s <code>Dockerfile</code>.</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Configure ENV variables for chamber</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># chamber KMS config</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span> CHAMBER_KMS_KEY_ALIAS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alias/example-staging-chamber&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div></p>
+</div>
+<p>Update the variable with the value to reflect your specific project.</p>
+<h1 id="usage">Usage</h1>
+<p>Using chamber you can perform all standard CRUD operations on secrets stored in <a href="">AWS SSM</a> and execute commands with environment variables populated from the secrets.</p>
+<p>For a complete description, check out the <a href="https://github.com/segmentio/chamber#usage">official documentation</a>.</p>
+<h2 id="create-or-update-a-secret">Create or Update a Secret</h2>
+<p>To create or update a secret, execute the command <code>chamber write $service $key $value</code>.
+Think of the <code>$service</code> as the namespace for storing the secrets. For example, you might have one <code>$service</code> which is called <code>global</code> that contains defaults for all services and then another one called <code>api</code>, which specifically sets the secrets for accessing the API.</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Chamber write secret</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">✅   <span style="color:#f92672">(</span>example-staging-admin<span style="color:#f92672">)</span> ~ ➤  chamber write kops IMAGE_PULL_SECRET_PASSWORD test123
+</code></pre></div></p>
+</div>
+<p>In this example, we write to the <code>kops</code> namespace a secret called <code>IMAGE_PULL_SECRET_PASSWORD</code> for accessing a Docker registry.</p>
+<h2 id="view-secrets">View Secrets</h2>
+<p>To read a secret run the command <code>chamber read $service $key</code>:</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Chamber read secret</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">✅   <span style="color:#f92672">(</span>example-staging-admin<span style="color:#f92672">)</span> ~ ➤  chamber read kops IMAGE_PULL_SECRET_PASSWORD
+Key                             Value           Version         LastModified    User
+image_pull_secret_password      test123         <span style="color:#ae81ff">1</span>               05-21 16:43:54  arn:aws:sts::XXXXXXXXXXXX:assumed-role/OrganizationAccountAccessRole/XXXXXXXXXXXX
+</code></pre></div></p>
+</div>
+<p>It&rsquo;s also possible to list all secrets and their corresponding values by running the following command:</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Chamber list secrets</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chamber list $service -e
+</code></pre></div></p>
+</div>
+<h2 id="delete-secrets">Delete Secrets</h2>
+<p>To delete a secret execute the command <code>chamber delete $service $key</code>:</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Chamber delete secret</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">✅   <span style="color:#f92672">(</span>example-staging-admin<span style="color:#f92672">)</span> ~ ➤  chamber delete kops IMAGE_PULL_SECRET_PASSWORD
+</code></pre></div></p>
+</div>
+<h2 id="execute-commands-with-secrets">Execute Commands with Secrets</h2>
+<p>Using <code>chamber</code>, you can execute any command that requires ENV variables by running <code>chamber exec $service -- $command</code>.</p>
+<p>For example, the following will run the <code>env</code> command in the context of <code>kops</code> namespace:</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Chamber with env command</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chamber exec kops -- env
+</code></pre></div></p>
+</div>
+<h2 id="using-chamber-with-multiple-namespaces">Using Chamber with Multiple Namespaces</h2>
+<p>Using <code>chamber</code> with multiple namespaces allows hierarchy of secrets and provides better structure and security.</p>
+<p>Currently, in our <a href="https://github.com/cloudposse/terraform-root-modules">Terraform root modules</a> for provisioning reference architectures on AWS, we use two namespaces, <code>backing-services</code> and <code>kops</code>, each corresponding to a Terraform project:</p>
+<ul>
+<li><code>backing-services</code> is used for all AWS services that we provision with Terraform (e.g. databases, caches, VPCs).</li>
+<li><code>kops</code> is used for all <code>kubernetes</code> system services (not application-related) that we provision using <a href="">Helmfiles</a>.</li>
+</ul>
+<p>For applications deployed on <code>kubernetes</code>, we can use a namespace per application to store secrets, for example:</p>
+<ul>
+<li><code>app_server</code> namespace to store secrets for the server app</li>
+<li><code>app_ui</code> namespace to store secrets for the UI app</li>
+</ul>
+<p>This way, different apps would be able to see only their own secrets, providing better separation and security.</p>
+<p>The command <code>chamber write $service $key $value</code> will write a secret (key-value pair) into the <code>$service</code> (which is another name for namespace).</p>
+<p>For the <code>app_server</code> app, run this command from the <code>geodesic</code> shell to store a secret in the <code>app_server</code> namespace:</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Chamber write secret</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chamber write app_server $key $value
+</code></pre></div></p>
+</div>
+<p>To read the secrets from the <code>app_server</code> namespace, populate ENV vars from the secrets and execute <code>$command</code>, run:</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Chamber execute command with secrets</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chamber exec app_server -- $command
+</code></pre></div></p>
+</div>
+<p>To read the secrets from two namespaces, run:</p>
+<div class="dialog code-block">
+  <h4 class="dialog__title"><i class="fa fa fa-code dialog__icon" aria-hidden="true"></i>Chamber execute command with secrets from multiple namespaces</h4>
+  <p class="dialog__text"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chamber exec kops app_server -- $command
+</code></pre></div></p>
+</div>
+<p>If we have secrets with the same name in both <code>kops</code> and <code>app_server</code> namespaces, the second one (from <code>app_server</code>) will override the first one.
+This feature could be useful if we wanted to have a default value in <code>kops</code>, and then override it per app if a new (app-specific) value is required.</p>
+<h2 id="using-chamber-with-multiple-namespaces-for-unlimited-staging-environments">Using Chamber with Multiple Namespaces for Unlimited Staging Environments</h2>
+<p>In some cases, using a namespace per app is not only useful/convenient, but is necessary.</p>
+<p>For example, for <code>Unlimited Staging Environments</code> (where we deploy different versions of an app into many <code>kubernetes</code> namespaces with different external URLs), if the app implements OAuth login,
+then the OAuth tokens and callback URLs will differ for each namespace.
+In this case, storing the OAuth tokens and callback URLs in one application namespace will not work.</p>
+<p>A <code>chamber</code> namespace per <code>kubernetes</code> namespace is required.</p>
+
+</div>
+<div id="navigation" class="container clearfix">
+<div class="float-left">
+        <a class="nav nav-prev" href="../../tools/aws-vault/" title="AWS Vault">
+            <label>&lt;&lt; AWS Vault</label>
+        </a>
+    </div>
+    <div class="float-right">
+        <a class="nav nav-next" href="../../tools/docker/" title="Docker" style="margin-right: 0px;">
+            <label>Docker >></label>
+        </a>
+    </div></div>
+</div><footer class="footer mt-5">
+</footer>
+
+</body>
+</html>

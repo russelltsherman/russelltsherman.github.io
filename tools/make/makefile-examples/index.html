@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Makefile Examples</title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../../css/syntax.css" />
+  <link rel="stylesheet" href="../../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../../css/custom.css" />
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    .article p,
+    .article ul,
+    .article ol,
+    .article blockquote {
+      max-width: 45em;
+    }
+
+    .article p:first-child {
+      font-size: 1.25em;
+      font-weight: 300;
+      max-width: 36em;
+       
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="../../../">Russell T Sherman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../../about/" title="">About</a>
+            </li>
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../../tools/" title="">Tools</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+<nav aria-label="breadcrumb navbar-dark">
+    <ol class="breadcrumb">
+        
+
+
+
+
+
+
+
+
+
+
+ <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/'>Home</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/tools/'>Tools</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/tools/make/'>Makefile</a></li> <li class='breadcrumb-item active' aria-current='page'>Makefile Examples</li>
+
+
+
+
+
+
+
+
+    </ol>
+</nav>
+
+
+<div class="container">
+  <h1>Makefile Examples</h1>
+
+  <p><em>IMPORTANT:</em> All leading whitespace should be tabbed (<code>^T</code>)</p>
+<h1 id="help-target">Help Target</h1>
+<p>Our standard <code>help</code> target. This will automatically generate well-formatted output for any target that has a <code>##</code> comment preceding it.</p>
+<p><img src="../../../assets/7ee92cd-Screen_Shot_2018-04-01_at_12.03.15_AM.png" alt="Example Help Target Output"></p>
+<p>Simply add this code snippet to your <code>Makefile</code> and you&rsquo;ll get this functionality.</p>
+<pre><code>## This help screen
+help:
+        @printf &quot;Available targets:\n\n&quot;
+        @awk '/^[a-zA-Z\-\_0-9%:\\]+/ { \
+          helpMessage = match(lastLine, /^## (.*)/); \
+          if (helpMessage) { \
+            helpCommand = $$1; \
+            helpMessage = substr(lastLine, RSTART + 3, RLENGTH); \
+      gsub(&quot;\\\\&quot;, &quot;&quot;, helpCommand); \
+      gsub(&quot;:+$$&quot;, &quot;&quot;, helpCommand); \
+            printf &quot;  \x1b[32;01m%-35s\x1b[0m %s\n&quot;, helpCommand, helpMessage; \
+          } \
+        } \
+        { lastLine = $$0 }' $(MAKEFILE_LIST) | sort -u
+        @printf &quot;\n&quot;
+</code></pre><h1 id="default-target">Default target</h1>
+<p>Add this to the top of your <code>Makefile</code> to automatically call <code>help</code> if no target passed.</p>
+<pre><code>default: help
+</code></pre>
+</div>
+<div id="navigation" class="container clearfix">
+<div class="float-left">
+        <a class="nav nav-prev" href="../../../tools/make/best-practices/" title="Makefile Best Practices">
+            <label>&lt;&lt; Makefile Best Practices</label>
+        </a>
+    </div>
+    <div class="float-right">
+        <a class="nav nav-next" href="../../../tools/packages/" title="Packages" style="margin-right: 0px;">
+            <label>Packages >></label>
+        </a>
+    </div></div>
+</div><footer class="footer mt-5">
+</footer>
+
+</body>
+</html>

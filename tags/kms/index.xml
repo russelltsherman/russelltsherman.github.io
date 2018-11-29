@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KMS on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/kms/</link>
+    <description>Recent content in KMS on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/kms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amazon Systems Manager (SSM)</title>
+      <link>https://russelltsherman.github.io/glossary/ssm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ssm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS KMS&#43;S3 File Storage</title>
+      <link>https://russelltsherman.github.io/secrets/aws-kms-s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/aws-kms-s3/</guid>
+      <description>The AWS KMS+S3 pattern involves provisioning an S3 bucket which enforces encryption at rest together with KMS.
+In geodesic, we use this together with goofys and our s3fs wrapper scripts to mount the encrypted bucket to a local mount point inside the geodesic container. This is an awesome solution for securely storing file-based secrets (e.g. ssh master keys).</description>
+    </item>
+    
+    <item>
+      <title>Chamber</title>
+      <link>https://russelltsherman.github.io/glossary/chamber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/chamber/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chamber</title>
+      <link>https://russelltsherman.github.io/tools/chamber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/chamber/</guid>
+      <description>Chamber is a CLI for managing secrets stored in AWS Systems Manager Parameter Store.
+In the article The Right Way to Store Secrets using Parameter Store, AWS recommends using chamber for secrets management.
+Configuration Prerequisites This assumes you&amp;rsquo;ve followed the AWS KMS guide which describes using Terraform to easily provision KMS+SSM resources for chamber.
+ Chamber with Geodesic From the Terraform outputs AWS KMS copy the chamber_kms_key_alias_name into the ENV var CHAMBER_KMS_KEY_ALIAS in the geodesic module`s Dockerfile.</description>
+    </item>
+    
+    <item>
+      <title>Goofys</title>
+      <link>https://russelltsherman.github.io/tools/goofys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/goofys/</guid>
+      <description>Goofys is similar to the original s3fs FUSE filesystem, but written in Golang and much, much faster. Also, it works seamlessly with EC2 instance profiles for assumed-roles, which s3fs-fuse does not support as of v1.82.
+The reason why goofys is faster is that it implements a subset of the POSIX filesystem semantics. Namely, it only supports read, write and append operations. This makes it suitable for many simple use-cases, but not suitable for running things like a database.</description>
+    </item>
+    
+    <item>
+      <title>Key Management Service (KMS)</title>
+      <link>https://russelltsherman.github.io/glossary/kms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kms/</guid>
+      <description>AWS Key Management Service is integrated with most other AWS services to help you protect the data you store with these services. AWS Key Management Service is also integrated with AWS CloudTrail to provide you with logs of all key usage to help meet your regulatory and compliance needs.</description>
+    </item>
+    
+  </channel>
+</rss>

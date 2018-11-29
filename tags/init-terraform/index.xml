@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>init-terraform on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/init-terraform/</link>
+    <description>Recent content in init-terraform on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/init-terraform/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running `init-terraform` fails: `Permission denied (publickey)`</title>
+      <link>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</guid>
+      <description>Question When running init-terraform, it fails while trying to fetch a private github repository.
+init-terraform Mounted buckets Filesystem Mounted on eg-staging-terraform-state /secrets/tf Initializing modules... - module.identity Getting source &amp;quot;git::git@github.com:cloudposse/terraform-aws-account-metadata.git?ref=tags/0.1.0&amp;quot; Error downloading modules: Error loading modules: error downloading &#39;ssh://git@github.com/cloudposse/terraform-aws-account-metadata.git?ref=tags%2F0.1.0&#39;: /usr/bin/git exited with 128: Cloning into &#39;.terraform/modules/ce64520f6f20f6ef2bd2674d5f00db4d&#39;... Warning: Permanently added the RSA host key for IP address &#39;194.31.252.103&#39; to the list of known hosts. Permission denied (publickey). fatal: Could not read from remote repository.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yaml on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/yaml/</link>
+    <description>Recent content in yaml on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/yaml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Helmfile</title>
+      <link>https://russelltsherman.github.io/tools/helmfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/helmfile/</guid>
+      <description>We use helmfile to deploy collections of charts as part of geodesic. The helmfile.yaml is a declarative configuration file that makes it easier to deploy and manage a large number of helm charts.
+Another way to think about it is like this:
+ If helm is responsible for deploying a single application to kubernetes, then helmfile is responsible for deploying multiple applications by calling helm.
+ Features  12-Factor Style Configurations - Parameterize all charts using Environment Variables Inline values.</description>
+    </item>
+    
+  </channel>
+</rss>

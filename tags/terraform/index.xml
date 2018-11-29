@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>terraform on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/terraform/</link>
+    <description>Recent content in terraform on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HashiCorp Language (HCL)</title>
+      <link>https://russelltsherman.github.io/glossary/hcl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/hcl/</guid>
+      <description>The HashiCorp Configuration language was designed to be both human readable and machine friendly. It used by most HashiCorp tools such as terraform. The nice thing about HCL is also fully JSON compatible, which means that JSON can be used anywhere HCL is expected. By supporting JSON backwards compatibility, HCL remains interoperable with other systems.
+Here&amp;rsquo;s an example of HCL:
+variable &amp;#34;ami&amp;#34; { description = &amp;#34;the AMI to use&amp;#34; } </description>
+    </item>
+    
+    <item>
+      <title>Infrastructure as Code (IaC)</title>
+      <link>https://russelltsherman.github.io/glossary/infrastructure-as-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/infrastructure-as-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Running `init-terraform` fails: `Permission denied (publickey)`</title>
+      <link>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</guid>
+      <description>Question When running init-terraform, it fails while trying to fetch a private github repository.
+init-terraform Mounted buckets Filesystem Mounted on eg-staging-terraform-state /secrets/tf Initializing modules... - module.identity Getting source &amp;quot;git::git@github.com:cloudposse/terraform-aws-account-metadata.git?ref=tags/0.1.0&amp;quot; Error downloading modules: Error loading modules: error downloading &#39;ssh://git@github.com/cloudposse/terraform-aws-account-metadata.git?ref=tags%2F0.1.0&#39;: /usr/bin/git exited with 128: Cloning into &#39;.terraform/modules/ce64520f6f20f6ef2bd2674d5f00db4d&#39;... Warning: Permanently added the RSA host key for IP address &#39;194.31.252.103&#39; to the list of known hosts. Permission denied (publickey). fatal: Could not read from remote repository.</description>
+    </item>
+    
+    <item>
+      <title>Terraform fails while applying plan: resource does not have attribute</title>
+      <link>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</guid>
+      <description>Question While attempting to run terraform apply, the execution failed with the following error:
+Error: Error applying plan: 6 error(s) occurred: * module.aurora_postgres.module.dns_replicas.output.hostname: Resource &#39;aws_route53_record.default&#39; does not have attribute &#39;fqdn&#39; for variable &#39;aws_route53_record.default.*.fqdn&#39; * module.aurora_postgres.output.password: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;master_password&#39; for variable &#39;aws_rds_cluster.default.*.master_password&#39; * module.aurora_postgres.output.user: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;master_username&#39; for variable &#39;aws_rds_cluster.default.*.master_username&#39; * module.aurora_postgres.output.cluster_name: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;cluster_identifier&#39; for variable &#39;aws_rds_cluster.default.*.cluster_identifier&#39; * module.</description>
+    </item>
+    
+  </channel>
+</rss>

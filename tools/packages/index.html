@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Packages</title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/syntax.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../css/custom.css" />
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    .article p,
+    .article ul,
+    .article ol,
+    .article blockquote {
+      max-width: 45em;
+    }
+
+    .article p:first-child {
+      font-size: 1.25em;
+      font-weight: 300;
+      max-width: 36em;
+       
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="../../">Russell T Sherman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../about/" title="">About</a>
+            </li>
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../tools/" title="">Tools</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+<nav aria-label="breadcrumb navbar-dark">
+    <ol class="breadcrumb">
+        
+
+
+
+
+
+
+
+ <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/'>Home</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/tools/'>Tools</a></li> <li class='breadcrumb-item active' aria-current='page'>Packages</li>
+
+
+
+
+
+
+    </ol>
+</nav>
+
+
+<div class="container">
+  <h1>Packages</h1>
+
+  <p>&ldquo;Packages&rdquo; is the Cloud Posse distribution of native apps. Use this repo to easily install binary releases of popular apps such as all of our <a href="../../tools/">standard tools</a>. This is useful for inclusion into a Dockerfile to install dependencies.</p>
+<h2 id="usage">Usage</h2>
+<p>Clone the repo.</p>
+<pre><code>git clone git@github.com:cloudposse/packages.git
+</code></pre><p>See all available packages:</p>
+<pre><code>make -C packages/install help
+</code></pre><p>Install everything&hellip;</p>
+<pre><code>make -C packages/install all
+</code></pre><p>Install specific packages:</p>
+<pre><code>make -C packages/install aws-vault chamber
+</code></pre><p>Install to a specific folder:</p>
+<pre><code>make -C packages/install aws-vault INSTALL_PATH=/usr/bin
+</code></pre><p>Add this to a <code>Dockerfile</code> to easily install packages:</p>
+<pre><code>RUN git clone --depth=1 -b master https://github.com/cloudposse/packages.git /packages &amp;&amp; \
+    rm -rf /packages/.git &amp;&amp; \
+    make -C /packages/install kubectl
+</code></pre><p>Here&rsquo;s a <a href="https://github.com/cloudposse/geodesic/blob/0.9.17/Dockerfile#L37-L46">real example</a> of how we use it in <code>geodesic</code>.</p>
+<p>Uninstall a specific package</p>
+<pre><code>make -C uninstall yq
+</code></pre><h2 id="makefile-inclusion">Makefile Inclusion</h2>
+<p>Sometimes it&rsquo;s necessary to install some binary dependencies when building projects. For example, we frequently
+rely on <code>gomplate</code> or <code>helm</code> to build chart packages.</p>
+<p>Here&rsquo;s a stub you can include into a <code>Makefile</code> to make it easier to install binary dependencies.</p>
+<pre><code>export PACKAGES_VERSION ?= master
+export PACKAGES_PATH ?= packages/
+export INSTALL_PATH ?= $(PACKAGES_PATH)/vendor
+
+## Install packages
+packages/install:
+        @if [ ! -d $(PACKAGES_PATH) ]; then \
+          echo &quot;Installing packages $(PACKAGES_VERSION)...&quot;; \
+          rm -rf $(PACKAGES_PATH); \
+          git clone --depth=1 -b $(PACKAGES_VERSION) https://github.com/cloudposse/packages.git $(PACKAGES_PATH); \
+          rm -rf $(PACKAGES_PATH)/.git; \
+        fi
+
+## Install package (e.g. helm, helmfile, kubectl)
+packages/install/%: packages/install
+        @make -C $(PACKAGES_PATH)/install $(subst packages/install/,,$@)
+
+## Uninstall package (e.g. helm, helmfile, kubectl)
+packages/uninstall/%:
+        @make -C $(PACKAGES_PATH)/uninstall $(subst packages/uninstall/,,$@)
+</code></pre><p>Here&rsquo;s a <a href="https://github.com/cloudposse/build-harness/blob/0.5.5/modules/packages/Makefile">real example</a> of how we use it.</p>
+
+</div>
+<div id="navigation" class="container clearfix">
+<div class="float-left">
+        <a class="nav nav-prev" href="../../tools/make/makefile-examples/" title="Makefile Examples">
+            <label>&lt;&lt; Makefile Examples</label>
+        </a>
+    </div>
+    <div class="float-right">
+        <a class="nav nav-next" href="../../troubleshooting/" title="Troubleshooting" style="margin-right: 0px;">
+            <label>Troubleshooting >></label>
+        </a>
+    </div></div>
+</div><footer class="footer mt-5">
+</footer>
+
+</body>
+</html>

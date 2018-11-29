@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/</link>
+    <description>Recent content in Home on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://russelltsherman.github.io/secrets/aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/aws/</guid>
+      <description>S3 + KMS SSM + KMS Instance Profiles + IAM Roles </description>
+    </item>
+    
+    <item>
+      <title>12-Factor</title>
+      <link>https://russelltsherman.github.io/glossary/12-factor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/12-factor/</guid>
+      <description>The 12-Factor pattern is a language agnostic, “Best Practice” for writing Cloud Native applications that can be easily and consistently deployed using Continuous Integration and Continuous Delivery (“CI/CD”).
+The pattern can be summed up as:
+ (a) treat all apps as disposable services that receive their configuration via environment variables; (b) rely on backing services to provide durability; (c) script all changes; and (d) treat all environments (dev, prod, qa, etc) as identical.</description>
+    </item>
+    
+    <item>
+      <title>1Password for Teams</title>
+      <link>https://russelltsherman.github.io/tools/1password/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/1password/</guid>
+      <description>The 1Password for Teams product by AgileBits is argubably the most popular SaaS-based password management tool. In our opinion, it offers a better user experience over apps like LastPass as well as provides integration with Duo and Slack for real-time activity notifications.
+Best Practices Here are some of our recommended practices for working with 1Password. If your organization choses an alternative password management solution, we recommend implementing compensating controls.
+Enable Real-time Slack Notifications With real-time slack notifications, you&amp;rsquo;ll be able to monitor logins for anomalies.</description>
+    </item>
+    
+    <item>
+      <title>Alert Components</title>
+      <link>https://russelltsherman.github.io/components/alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/alert/</guid>
+      <description>This is a primary alert—check it out!  This is a secondary alert—check it out!  This is a success alert—check it out!  This is a danger alert—check it out!  This is a warning alert—check it out!  This is a info alert—check it out!  This is a light alert—check it out!  This is a dark alert—check it out!  </description>
+    </item>
+    
+    <item>
+      <title>Amazon Certificate Manager (ACM)</title>
+      <link>https://russelltsherman.github.io/glossary/acm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/acm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon Machine Image (AMI)</title>
+      <link>https://russelltsherman.github.io/glossary/ami/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ami/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon Systems Manager (SSM)</title>
+      <link>https://russelltsherman.github.io/glossary/ssm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ssm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anti-Pattern</title>
+      <link>https://russelltsherman.github.io/glossary/anti-pattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/anti-pattern/</guid>
+      <description>An anti-pattern is a common response to a recurring problem that is usually ineffective and risks being highly counterproductive. See best-practices.</description>
+    </item>
+    
+    <item>
+      <title>Availability Zone (AZ)</title>
+      <link>https://russelltsherman.github.io/glossary/availability-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/availability-zone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://russelltsherman.github.io/glossary/aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/aws/</guid>
+      <description>Amazon Web Services is a public cloud offering from Amazon. It&amp;rsquo;s also a command line tool (aws) use to control services running on the platform.</description>
+    </item>
+    
+    <item>
+      <title>AWS Cli</title>
+      <link>https://russelltsherman.github.io/tools/aws-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/aws-cli/</guid>
+      <description>Tips &amp;amp; Tricks Delete all versions of objects in an S3 bucket
+export BUCKET=foobar aws s3api delete-objects --bucket $BUCKET \  --delete &amp;#34;$(aws s3api list-object-versions --bucket $BUCKET | \  jq -M &amp;#39;{Objects: [.[&amp;#34;Versions&amp;#34;,&amp;#34;DeleteMarkers&amp;#34;][]|select(.Key == &amp;#34;key-value&amp;#34;)| {Key:.Key, VersionId:.VersionId}], Quiet: false}&amp;#39;)&amp;#34; via: stackoverflow</description>
+    </item>
+    
+    <item>
+      <title>AWS KMS&#43;S3 File Storage</title>
+      <link>https://russelltsherman.github.io/secrets/aws-kms-s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/aws-kms-s3/</guid>
+      <description>The AWS KMS+S3 pattern involves provisioning an S3 bucket which enforces encryption at rest together with KMS.
+In geodesic, we use this together with goofys and our s3fs wrapper scripts to mount the encrypted bucket to a local mount point inside the geodesic container. This is an awesome solution for securely storing file-based secrets (e.g. ssh master keys).</description>
+    </item>
+    
+    <item>
+      <title>AWS KMS&#43;SSM</title>
+      <link>https://russelltsherman.github.io/secrets/aws-kms-ssm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/aws-kms-ssm/</guid>
+      <description>Prerequisites This assumes you&amp;rsquo;ve followed the Geodesic Module Usage with Terraform guide which covers all the scaffolding necessary to get started.
+ Dependencies None
+Install Add chamber Terraform Root Module Create a file in /conf/chamber/kms.tf with following content
+/conf/chamber/kms-key.tf module &amp;#34;chamber_kms_key&amp;#34; { source = &amp;#34;git::https://github.com/cloudposse/terraform-aws-kms-key.git?ref=tags/0.1.0&amp;#34; namespace = &amp;#34;${module.identity.namespace}&amp;#34; stage = &amp;#34;${module.identity.stage}&amp;#34; name = &amp;#34;chamber&amp;#34; description = &amp;#34;KMS key for chamber&amp;#34; } output &amp;quot;chamber_kms_key_arn&amp;quot; { value = &amp;quot;${module.chamber_kms_key.key_arn}&amp;quot; description = &amp;quot;KMS key ARN&amp;quot; }</description>
+    </item>
+    
+    <item>
+      <title>AWS Vault</title>
+      <link>https://russelltsherman.github.io/tools/aws-vault/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/aws-vault/</guid>
+      <description>The aws-vault command line tool by 99 Designs is a utility for securely storing and accessing encrypted AWS credentials for use in development environments. This tool makes it extremely easy to work with IAM assumed roles across multiple AWS organizations.
+Info aws-vault has no relationship to the HashiCorp Vault.
+ Features:
+ Encrypted vault for IAM credentials (OSX KeyChain or file) IAM Metadata server (mocks the EC2 API) to simulate instance profiles for local development Prompts for MFA Token Variable-length session TTLs Compatible with ~/.</description>
+    </item>
+    
+    <item>
+      <title>aws-vault</title>
+      <link>https://russelltsherman.github.io/glossary/aws-vault/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/aws-vault/</guid>
+      <description>aws-vault is a utility for securely managing secrets with AWS Systems Manager (SSM) Parameter Store and KMS</description>
+    </item>
+    
+    <item>
+      <title>aws-vault outputs `&#39;aws_access_key_id&#39;` message and does nothing</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</guid>
+      <description>Question When calling aws-vault exec or using assume-role in geodesic, a single line is output that simply says:
+&#39;aws_access_key_id&#39; Answer This is usually because there&amp;rsquo;s a [default] section in your ~/.aws/config. Remove that and it should start to work.</description>
+    </item>
+    
+    <item>
+      <title>aws-vault: error: Failed to get credentials ... aes.KeyUnwrap(): integrity check failed.</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</guid>
+      <description>Question When calling aws-vault exec or attempting to assume-role, I get the following error:
+Enter passphrase to unlock /conf/.awsvault/keys/: aws-vault: error: Failed to get credentials for peerstreet (source profile for cp-root-admin): aes.KeyUnwrap(): integrity check failed. Answer This horribly cryptic error message is a cryptographers way of saying &amp;ldquo;wrong password&amp;rdquo;. Just try running the command again, but this time enter the correct password. =)</description>
+    </item>
+    
+    <item>
+      <title>aws-vault: error: Failed to start credential server</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</guid>
+      <description>Question When running aws-vault or assume-role, I get the following error:
+aws-vault: error: Failed to start credential server: listen tcp 127.0.0.1:9099: bind: address already in use Answer This is usually caused by another geodesic shell running. This happens because aws-vault server can only be run once. Try exiting your other geodesic shell.</description>
+    </item>
+    
+    <item>
+      <title>Badge Components</title>
+      <link>https://russelltsherman.github.io/components/badge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/badge/</guid>
+      <description>Example heading New Example heading New Example heading New Example heading New Example heading New Example heading New </description>
+    </item>
+    
+    <item>
+      <title>Bastion</title>
+      <link>https://russelltsherman.github.io/glossary/bastion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/bastion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Best Practices</title>
+      <link>https://russelltsherman.github.io/glossary/best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/best-practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bevager Reports</title>
+      <link>https://russelltsherman.github.io/reports/bevager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/reports/bevager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BeyondCorp</title>
+      <link>https://russelltsherman.github.io/glossary/beyondcorp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/beyondcorp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Breadcrumb Components</title>
+      <link>https://russelltsherman.github.io/components/breadcrumb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/breadcrumb/</guid>
+      <description>Home Library Data   </description>
+    </item>
+    
+    <item>
+      <title>Build Harness</title>
+      <link>https://russelltsherman.github.io/glossary/build-harness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/build-harness/</guid>
+      <description>The primary benefit of using a build-harness is it allows for the consolidation of business logic related to building software. This allows to keep things DRY. Using a centralized repo that can be versioned and shared across multiple projects reduces long-term technical debt associated with building and releasing software by reducing maintenance effort.
+We provide one that we use in nearly all of our projects. It&amp;rsquo;s available here: https://github.com/cloudposse/build-harness</description>
+    </item>
+    
+    <item>
+      <title>Business Logic</title>
+      <link>https://russelltsherman.github.io/glossary/business-logic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/business-logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Button Components</title>
+      <link>https://russelltsherman.github.io/components/button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/button/</guid>
+      <description>Primary Secondary Success Danger Warning Info Light Dark Link</description>
+    </item>
+    
+    <item>
+      <title>Button Group Components</title>
+      <link>https://russelltsherman.github.io/components/button-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/button-group/</guid>
+      <description>Basic example Left Middle Right   Button toolbar 1 2 3 4  5 6 7  8    Sizing Left Middle Right  Left Middle Right  Left Middle Right   Nesting 1 2 Dropdown  Dropdown link Dropdown link     Vertical variation Button Button Dropdown  Dropdown link Dropdown link   Button Button Dropdown  Dropdown link Dropdown link   Dropdown  Dropdown link Dropdown link   Dropdown  Dropdown link Dropdown link     </description>
+    </item>
+    
+    <item>
+      <title>Calling `chamber write` triggers `Error: InvalidKeyId: ... parameter_store_key is not found.`</title>
+      <link>https://russelltsherman.github.io/troubleshooting/calling-chamber-write-triggers-error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/calling-chamber-write-triggers-error/</guid>
+      <description>Question Error: InvalidKeyId: Alias arn:aws:kms:us-west-2:671362398325:alias/parameter_store_key is not found. (Service: AWSKMS; Status Code: 400; Error Code: NotFoundException; Request ID: bf9b3240-39f5-11e8-921d-e9dc98bd5b1a) Answer Per the documentation, Chamber expects to find a KMS key with alias parameter_store_key in the account that you are writing/reading secrets.
+You can follow the AWS KMS documentation to create your key, and follow this guide to set up your alias.
+We recommend using Terraform:
+resource &amp;quot;aws_kms_key&amp;quot; &amp;quot;parameter_store&amp;quot; { description = &amp;quot;Parameter store kms master key&amp;quot; deletion_window_in_days = 10 enable_key_rotation = true } resource &amp;quot;aws_kms_alias&amp;quot; &amp;quot;parameter_store_alias&amp;quot; { name = &amp;quot;alias/parameter_store_key&amp;quot; target_key_id = &amp;quot;${aws_kms_key.</description>
+    </item>
+    
+    <item>
+      <title>Chamber</title>
+      <link>https://russelltsherman.github.io/glossary/chamber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/chamber/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chamber</title>
+      <link>https://russelltsherman.github.io/tools/chamber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/chamber/</guid>
+      <description>Chamber is a CLI for managing secrets stored in AWS Systems Manager Parameter Store.
+In the article The Right Way to Store Secrets using Parameter Store, AWS recommends using chamber for secrets management.
+Configuration Prerequisites This assumes you&amp;rsquo;ve followed the AWS KMS guide which describes using Terraform to easily provision KMS+SSM resources for chamber.
+ Chamber with Geodesic From the Terraform outputs AWS KMS copy the chamber_kms_key_alias_name into the ENV var CHAMBER_KMS_KEY_ALIAS in the geodesic module`s Dockerfile.</description>
+    </item>
+    
+    <item>
+      <title>Change Management</title>
+      <link>https://russelltsherman.github.io/glossary/change-control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/change-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chart Registry</title>
+      <link>https://russelltsherman.github.io/glossary/chart-registry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/chart-registry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CLI</title>
+      <link>https://russelltsherman.github.io/glossary/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud Posse, LLC</title>
+      <link>https://russelltsherman.github.io/glossary/cloudposse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudposse/</guid>
+      <description>Cloud Posse is a DevOps professional services company. Let us know how we can help. Reach us at hello@cloudposse.com.</description>
+    </item>
+    
+    <item>
+      <title>CloudFront</title>
+      <link>https://russelltsherman.github.io/glossary/cloudfront/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudfront/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudTrail</title>
+      <link>https://russelltsherman.github.io/glossary/cloudtrail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudtrail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudWatch</title>
+      <link>https://russelltsherman.github.io/glossary/cloudwatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudwatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudWatch Logs</title>
+      <link>https://russelltsherman.github.io/glossary/cloudwatch-logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudwatch-logs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Components</title>
+      <link>https://russelltsherman.github.io/components/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/code/</guid>
+      <description>HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; {{- partial &amp;#34;head.html&amp;#34; . -}} &amp;lt;body&amp;gt; {{- partial &amp;#34;header.html&amp;#34; . -}} &amp;lt;div id=&amp;#34;content&amp;#34;&amp;gt; {{- partial &amp;#34;body-beforecontent.html&amp;#34; . -}} {{- block &amp;#34;main&amp;#34; . -}}{{- end -}} {{- partial &amp;#34;body-aftercontent.html&amp;#34; . -}} &amp;lt;/div&amp;gt; {{- partial &amp;#34;footer.html&amp;#34; . -}} {{- partial &amp;#34;debug.html&amp;#34; . -}} &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Go package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello, World!&amp;#34;) } JS (function($, window, undefined){ function ToolTip (){ var targets = $( &amp;#39;.glossarizer_replaced&amp;#39; ), target = false, tooltip = false, title = false; targets.</description>
+    </item>
+    
+    <item>
+      <title>Code Review (CR)</title>
+      <link>https://russelltsherman.github.io/glossary/code-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/code-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CodeBuild</title>
+      <link>https://russelltsherman.github.io/glossary/code-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/code-build/</guid>
+      <description>CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue. Because CodeBuild runs in AWS, it can leverage IAM Instance Profiles to assume roles to securely provision resources without exposing AWS access credentials.</description>
+    </item>
+    
+    <item>
+      <title>CodeDeploy</title>
+      <link>https://russelltsherman.github.io/glossary/code-deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/code-deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Codefresh</title>
+      <link>https://russelltsherman.github.io/glossary/codefresh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/codefresh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CodePipeline</title>
+      <link>https://russelltsherman.github.io/glossary/code-pipeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/code-pipeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Color Components</title>
+      <link>https://russelltsherman.github.io/components/colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/colors/</guid>
+      <description>Buttons    Primary Secondary Success Info Warning Danger Link Primary Secondary Success Info Warning Danger Link Primary Secondary Success Info Warning Danger Primary  Dropdown link Dropdown link    Success  Dropdown link Dropdown link    Info  Dropdown link Dropdown link    Danger  Dropdown link Dropdown link     Large button Default button Small button   Active  Check  Check    Active  Radio  Radio    Left Middle Right   1 2 3 4  5 6       Navbars  Navbar   Home (current)  Features  Pricing  About   Search     Navbar   Home (current)  Features  Pricing  About   Search     Navbar   Home (current)  Features  Pricing  About   Search        Typography    Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6  Heading with muted text  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</description>
+    </item>
+    
+    <item>
+      <title>Container Management Platform (CMP)</title>
+      <link>https://russelltsherman.github.io/glossary/cmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Delivery (CD)</title>
+      <link>https://russelltsherman.github.io/glossary/continuous-delivery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/continuous-delivery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration (CI)</title>
+      <link>https://russelltsherman.github.io/glossary/continuous-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/continuous-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration / Continuous Delivery (CI/CD)</title>
+      <link>https://russelltsherman.github.io/glossary/cicd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cicd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Create, Read, Update, Delete (CRUD)</title>
+      <link>https://russelltsherman.github.io/glossary/crud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/crud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Declarative Declaration</title>
+      <link>https://russelltsherman.github.io/glossary/declarative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/declarative/</guid>
+      <description>References  https://en.wikipedia.org/wiki/Infrastructure_as_Code#Types_of_approaches  </description>
+    </item>
+    
+    <item>
+      <title>Deployment</title>
+      <link>https://russelltsherman.github.io/release/deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/release/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development Secrets</title>
+      <link>https://russelltsherman.github.io/secrets/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/development/</guid>
+      <description>Inevitably, developers working with external APIs will need access to some number of secrets.
+Docker Compose Since we prescribe using docker-compose for local development environments, externalizing all parameters and secrets is possible by using environment variables. Combined with chamber, there&amp;rsquo;s an easy way to secure as much as possible the secrets for local consumption and easily rotate them as necessary without needing to distribute/communicate/coordinate the changes to the various engineering teams.</description>
+    </item>
+    
+    <item>
+      <title>Docker Best Practices</title>
+      <link>https://russelltsherman.github.io/tools/docker/best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/docker/best-practices/</guid>
+      <description>Inheritance Inheritance is when you use FROM some-image:1.2.3 (vs FROM scratch) in a Dockerfile. We recommend to leverage lean base images (E.g. alpine or busybox).
+Try to leverage the same base image in as many of your images as possible for faster docker pulls.
+Read More  https://docs.docker.com/engine/reference/builder/#from 
+ Multi-stage Builds There are two ways to leverage multi-stage builds.
+ Build-time Environments The most common application of multi-stage builds is for using a build-time environment for compiling apps, and then a minimal image (E.</description>
+    </item>
+    
+    <item>
+      <title>Docker Compose</title>
+      <link>https://russelltsherman.github.io/glossary/docker-compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/docker-compose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker Image</title>
+      <link>https://russelltsherman.github.io/glossary/docker-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/docker-image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker Registry</title>
+      <link>https://russelltsherman.github.io/glossary/docker-registry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/docker-registry/</guid>
+      <description>It works together with the docker push and docker pull commands for standard CRUD operations.
+Example Docker Registries Examples of Docker registry:
+ Docker Hub Codefresh Registry AWS Elastic Container Registry Quay Registry 
+ </description>
+    </item>
+    
+    <item>
+      <title>Docker Tips &amp; Tricks</title>
+      <link>https://russelltsherman.github.io/tools/docker/tips-tricks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/docker/tips-tricks/</guid>
+      <description>Here&amp;rsquo;s a collection of some nice little hacks for docker. A lot of them are related to house keeping.
+Docker Stats Produce console stats for all running containers (e.g. like top):
+docker stats $(docker ps --format=&#39;{{.Names}}&#39; Remove all stopped containers docker rm $(docker ps -a -q) Remove all untagged images docker images -q --filter &amp;quot;dangling=true&amp;quot; | xargs docker rmi Prune everything The docker system prune command is a shortcut that prunes images, containers, and networks.</description>
+    </item>
+    
+    <item>
+      <title>Dockerfile</title>
+      <link>https://russelltsherman.github.io/glossary/dockerfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/dockerfile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t Repeat Yourself (DRY)</title>
+      <link>https://russelltsherman.github.io/glossary/dry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/dry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECS</title>
+      <link>https://russelltsherman.github.io/glossary/ecs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECS Agent</title>
+      <link>https://russelltsherman.github.io/glossary/ecs-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecs-agent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECS Service</title>
+      <link>https://russelltsherman.github.io/glossary/ecs-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecs-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECS Task</title>
+      <link>https://russelltsherman.github.io/glossary/ecs-task/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecs-task/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elastic Container Registry (ECR)</title>
+      <link>https://russelltsherman.github.io/glossary/ecr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ElasticBeanstalk (EB)</title>
+      <link>https://russelltsherman.github.io/glossary/eb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/eb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>End-to-end (e2e)</title>
+      <link>https://russelltsherman.github.io/glossary/e2e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/e2e/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Environment Variable</title>
+      <link>https://russelltsherman.github.io/glossary/environment-variable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/environment-variable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Error: UPGRADE FAILED: failed to create resource: namespaces &#34;...&#34; not found</title>
+      <link>https://russelltsherman.github.io/troubleshooting/helm-upgrade-failed-to-create-resource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/helm-upgrade-failed-to-create-resource/</guid>
+      <description>Question Helm Upgrade Failed &amp;#34;cloudposse-incubator&amp;#34; has been added to your repositories exec: helm repo update --kube-context us-west-2-staging-example-com Hang tight while we grab the latest from your chart repositories... ...Successfully got an update from the &amp;#34;cloudposse-incubator&amp;#34; chart repository ...Successfully got an update from the &amp;#34;stable&amp;#34; chart repository Update Complete. ⎈ Happy Helming!⎈ exec: helm upgrade --install pr-1627-app-pull-secret cloudposse-incubator/dockercfg --version 0.1.0 --namespace pr-1627-app --wait --timeout=600 --force --reset-values --kube -context us-west-2-staging-example-com Error: UPGRADE FAILED: failed to create resource: namespaces &amp;#34;pr-1627-app&amp;#34; not found err: exit status 1 [SYSTEM] Error: Failed to run freestyle step: Deploy backing services with helmfile (for unlimited staging environments); caused by NonZeroExitCodeError: Container for step title: Deploy backing services with helmfile (for unlimited staging environments), step type: freestyle, operation: Freestyle step failed with exit code: 1</description>
+    </item>
+    
+    <item>
+      <title>Executable Documentation</title>
+      <link>https://russelltsherman.github.io/glossary/executable-documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/executable-documentation/</guid>
+      <description>We treat Makefiles as executable documentation. That is, for every target we add a meaningful annotations (e.g. ## Build docker container). The end-user can then choose to run the target (e.g. make build) or run the command described in the target (e.g. docker build -t example/image .).</description>
+    </item>
+    
+    <item>
+      <title>FUSE</title>
+      <link>https://russelltsherman.github.io/glossary/fuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/fuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geodesic</title>
+      <link>https://russelltsherman.github.io/glossary/geodesic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/geodesic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geodesic Module</title>
+      <link>https://russelltsherman.github.io/glossary/geodesic-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/geodesic-module/</guid>
+      <description>Usually we create geodesic modules that correspond to each AWS organization.
+For example, the standard geodesic modules are:
+ root.cloudposse.org - a module which is reponsible for administering the root AWS account and provisioning all subaccounts (organizations). prod.cloudposse.org - a module which is responsible for provisioning all production infrastructure including production kops clusters and backing services (E.g. rds) staging.cloudposse.org - a module which is responsible for provisioning all staging resources dev.</description>
+    </item>
+    
+    <item>
+      <title>Geodesic Shell</title>
+      <link>https://russelltsherman.github.io/glossary/geodesic-shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/geodesic-shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git Workflow</title>
+      <link>https://russelltsherman.github.io/glossary/git-workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/git-workflow/</guid>
+      <description>In the Git Workflow, the master branch is often treated as the pristine copy of the code base and considered always safe to deploy to production. Everytime a change is needed, a developer will open up a new branch against master and push their changes up to the origin. When the developer is ready to merge their changes, they open up a Pull Request and request one of their peers to perform a Code Review.</description>
+    </item>
+    
+    <item>
+      <title>Gomplate</title>
+      <link>https://russelltsherman.github.io/tools/gomplate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/gomplate/</guid>
+      <description>Gomplate Logo   The Go progamming language supports native templating. The problem is that there aren&amp;rsquo;t very many functions supported out-of-the-box and it cannot be called from the command line.
+Gomplate is a CLI tool that addresses this need. That is, it can be used as an alternative to envsubst, but also supports additional template data-sources such as: JSON, YAML, and even AWS EC2 metadata.
+We love envsubst for its super-minimalist template processing, but sometimes more advanced templating with conditions is necessary.</description>
+    </item>
+    
+    <item>
+      <title>Goofys</title>
+      <link>https://russelltsherman.github.io/glossary/goofys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/goofys/</guid>
+      <description>Learn more about how to use goofys and how we use it with geodeisc.</description>
+    </item>
+    
+    <item>
+      <title>Goofys</title>
+      <link>https://russelltsherman.github.io/tools/goofys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/goofys/</guid>
+      <description>Goofys is similar to the original s3fs FUSE filesystem, but written in Golang and much, much faster. Also, it works seamlessly with EC2 instance profiles for assumed-roles, which s3fs-fuse does not support as of v1.82.
+The reason why goofys is faster is that it implements a subset of the POSIX filesystem semantics. Namely, it only supports read, write and append operations. This makes it suitable for many simple use-cases, but not suitable for running things like a database.</description>
+    </item>
+    
+    <item>
+      <title>HashiCorp Language (HCL)</title>
+      <link>https://russelltsherman.github.io/glossary/hcl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/hcl/</guid>
+      <description>The HashiCorp Configuration language was designed to be both human readable and machine friendly. It used by most HashiCorp tools such as terraform. The nice thing about HCL is also fully JSON compatible, which means that JSON can be used anywhere HCL is expected. By supporting JSON backwards compatibility, HCL remains interoperable with other systems.
+Here&amp;rsquo;s an example of HCL:
+variable &amp;#34;ami&amp;#34; { description = &amp;#34;the AMI to use&amp;#34; } </description>
+    </item>
+    
+    <item>
+      <title>HashiCorp Terraform</title>
+      <link>https://russelltsherman.github.io/glossary/terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helm</title>
+      <link>https://russelltsherman.github.io/glossary/helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/helm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helm</title>
+      <link>https://russelltsherman.github.io/tools/helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/helm/</guid>
+      <description>Helm Logo   Helm makes it easy to install charts (an application) on kubernetes clusters. Just like npm or apt make it easy to install NodeJS modules and Debian packages, helm makes it easy to deploy a full-fledged application with all of its dependencies on kubernetes.
+Install Tiller The helm tiller is the server-side component of Helm. It&amp;rsquo;s used to cordinate with the kubernetes cluster in order to deploy resources (E.</description>
+    </item>
+    
+    <item>
+      <title>Helm Chart</title>
+      <link>https://russelltsherman.github.io/glossary/helm-chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/helm-chart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helm Tiller</title>
+      <link>https://russelltsherman.github.io/glossary/helm-tiller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/helm-tiller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helmfile</title>
+      <link>https://russelltsherman.github.io/tools/helmfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/helmfile/</guid>
+      <description>We use helmfile to deploy collections of charts as part of geodesic. The helmfile.yaml is a declarative configuration file that makes it easier to deploy and manage a large number of helm charts.
+Another way to think about it is like this:
+ If helm is responsible for deploying a single application to kubernetes, then helmfile is responsible for deploying multiple applications by calling helm.
+ Features  12-Factor Style Configurations - Parameterize all charts using Environment Variables Inline values.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Static Site Generator</title>
+      <link>https://russelltsherman.github.io/tools/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/hugo/</guid>
+      <description>Hugo Static Site Generator   Hugo is one of the most popular open-source static site generators. It also happens to be a rediculously fast framework for building static websites. We use it to build our documentation.
+What we like about it is that it&amp;rsquo;s written in Go, speaks &amp;ldquo;markdown&amp;rdquo; and uses Go-templates for rendering all pages.
+Want to host your own static site? Here&amp;rsquo;s how we do it.</description>
+    </item>
+    
+    <item>
+      <title>Idenity Aware Proxy</title>
+      <link>https://russelltsherman.github.io/glossary/iap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/iap/</guid>
+      <description>An Identity-Aware Proxy enables an organization to control access to cloud applications (e.g. SaaS). Typically, an IAP works together with an organization’s Single Sign-on (SSO) provide for verifying a user’s identity and determining if that user should be allowed to access the application.
+The IAP is part of the BeyondCorp enterprise security model pioneered by Google. It enables every employee to work from untrusted networks without the use of a VPN.</description>
+    </item>
+    
+    <item>
+      <title>Identity Access Management (IAM)</title>
+      <link>https://russelltsherman.github.io/glossary/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/iam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imperative Declaration</title>
+      <link>https://russelltsherman.github.io/glossary/imperative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/imperative/</guid>
+      <description>References  https://en.wikipedia.org/wiki/Infrastructure_as_Code#Types_of_approaches  </description>
+    </item>
+    
+    <item>
+      <title>Infrastructure</title>
+      <link>https://russelltsherman.github.io/glossary/infrastructure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/infrastructure/</guid>
+      <description>Infrastructure is everything that supports running your software.</description>
+    </item>
+    
+    <item>
+      <title>Infrastructure as Code (IaC)</title>
+      <link>https://russelltsherman.github.io/glossary/infrastructure-as-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/infrastructure-as-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ingress Controller</title>
+      <link>https://russelltsherman.github.io/glossary/ingress-controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ingress-controller/</guid>
+      <description>The Kubernetes Ingress Controller is a native resource type in Kubernetes that functions like a Layer 7 Load Balancer (e.g. HTTP Load Balancer) to route requests to various backend services based on incoming hostname (e.g. Host header) and request path (e.g. /foo).
+The default Ingress Controller in Kubernetes is powered by Nginx, but this is an implementation detail that is entirely abstracted away from the end user. There are many vendors, in addition to Nginx providing alternative implementations.</description>
+    </item>
+    
+    <item>
+      <title>init-terraform</title>
+      <link>https://russelltsherman.github.io/glossary/init-terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/init-terraform/</guid>
+      <description>Read More  This init-terraform script is provided as part of geodesic. The terraform-aws-tfstate-backend module provides an encrypted S3 bucket for persisting state and a DynamoDB table for state locking. 
+ </description>
+    </item>
+    
+    <item>
+      <title>jq</title>
+      <link>https://russelltsherman.github.io/glossary/jq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/jq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kanban</title>
+      <link>https://russelltsherman.github.io/glossary/kanban/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kanban/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Key Management Service (KMS)</title>
+      <link>https://russelltsherman.github.io/glossary/kms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kms/</guid>
+      <description>AWS Key Management Service is integrated with most other AWS services to help you protect the data you store with these services. AWS Key Management Service is also integrated with AWS CloudTrail to provide you with logs of all key usage to help meet your regulatory and compliance needs.</description>
+    </item>
+    
+    <item>
+      <title>Key Performance Indicator (KPI)</title>
+      <link>https://russelltsherman.github.io/glossary/kpi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kpi/</guid>
+      <description>A Key Performance Indicator is a metric (e.g. number of requests per second) that indicates if some key business objective is being satisfied. Since it’s a metric, it means that it must be able of being measured or quantified. Businesses usually use multiple KPIs to evaluate their success at reaching concrete targets.</description>
+    </item>
+    
+    <item>
+      <title>Keybase</title>
+      <link>https://russelltsherman.github.io/tools/keybase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/keybase/</guid>
+      <description>Install Keybase  image rendered using shortcode   </description>
+    </item>
+    
+    <item>
+      <title>Kops</title>
+      <link>https://russelltsherman.github.io/tools/kops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/kops/</guid>
+      <description>  Kops   Quick Start These instructions are based on Geodesic, which is a cluster shell that contains a mashup of tools like kops, terraform, kubectl.
+Building Cluster Start a Geodesic cluster shell.
+assume-role kops create -f /conf/kops/manifest.yml </description>
+    </item>
+    
+    <item>
+      <title>kubectl</title>
+      <link>https://russelltsherman.github.io/glossary/kubectl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kubectl/</guid>
+      <description>kubectl is a cli for controlling Kubernetes clusters. It&amp;rsquo;s officially pronounced as &amp;ldquo;kube control&amp;rdquo;, but we&amp;rsquo;ll always refer to it as &amp;ldquo;kube cuddle&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://russelltsherman.github.io/glossary/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Ops (kops)</title>
+      <link>https://russelltsherman.github.io/glossary/kops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://russelltsherman.github.io/glossary/lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Layer 7</title>
+      <link>https://russelltsherman.github.io/glossary/layer-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/layer-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logi Reports</title>
+      <link>https://russelltsherman.github.io/reports/logi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/reports/logi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Makefile Best Practices</title>
+      <link>https://russelltsherman.github.io/tools/make/best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/make/best-practices/</guid>
+      <description>Avoid using Evals The use of $(eval ...) leads to very confusing execution paths, due to the way make evaluates a target. When make executes a target, it preprocesses all $(....) interpolations and renders the template. After that, it executes, line-by-line each command in the target.
+Namespace targets Over time, the number of targets in a Makefile will grow. We recommend namespacing all targets.
+For example:
+docker/build: docker build -t example/test .</description>
+    </item>
+    
+    <item>
+      <title>Makefile Examples</title>
+      <link>https://russelltsherman.github.io/tools/make/makefile-examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/make/makefile-examples/</guid>
+      <description>IMPORTANT: All leading whitespace should be tabbed (^T)
+Help Target Our standard help target. This will automatically generate well-formatted output for any target that has a ## comment preceding it.
+Simply add this code snippet to your Makefile and you&amp;rsquo;ll get this functionality.
+## This help screen help: @printf &amp;quot;Available targets:\n\n&amp;quot; @awk &#39;/^[a-zA-Z\-\_0-9%:\\]+/ { \ helpMessage = match(lastLine, /^## (.*)/); \ if (helpMessage) { \ helpCommand = $$1; \ helpMessage = substr(lastLine, RSTART + 3, RLENGTH); \ gsub(&amp;quot;\\\\&amp;quot;, &amp;quot;&amp;quot;, helpCommand); \ gsub(&amp;quot;:+$$&amp;quot;, &amp;quot;&amp;quot;, helpCommand); \ printf &amp;quot; \x1b[32;01m%-35s\x1b[0m %s\n&amp;quot;, helpCommand, helpMessage; \ } \ } \ { lastLine = $$0 }&#39; $(MAKEFILE_LIST) | sort -u @printf &amp;quot;\n&amp;quot; Default target Add this to the top of your Makefile to automatically call help if no target passed.</description>
+    </item>
+    
+    <item>
+      <title>Monorepo</title>
+      <link>https://russelltsherman.github.io/glossary/monorepo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/monorepo/</guid>
+      <description>See also polyrepo.</description>
+    </item>
+    
+    <item>
+      <title>Multi-Factor Authentication (MFA)</title>
+      <link>https://russelltsherman.github.io/glossary/mfa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/mfa/</guid>
+      <description>There are a lot of terms that roughly mean the same thing.
+ MFA - Multi-factor Authentication OTP - One-time password (~MFA Token) 2FA - Two-factor authentication  </description>
+    </item>
+    
+    <item>
+      <title>On-call Engineer (OCE)</title>
+      <link>https://russelltsherman.github.io/glossary/oce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/oce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSI Model</title>
+      <link>https://russelltsherman.github.io/glossary/osi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/osi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Packages</title>
+      <link>https://russelltsherman.github.io/tools/packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/packages/</guid>
+      <description>&amp;ldquo;Packages&amp;rdquo; is the Cloud Posse distribution of native apps. Use this repo to easily install binary releases of popular apps such as all of our standard tools. This is useful for inclusion into a Dockerfile to install dependencies.
+Usage Clone the repo.
+git clone git@github.com:cloudposse/packages.git See all available packages:
+make -C packages/install help Install everything&amp;hellip;
+make -C packages/install all Install specific packages:
+make -C packages/install aws-vault chamber Install to a specific folder:</description>
+    </item>
+    
+    <item>
+      <title>PagerDuty</title>
+      <link>https://russelltsherman.github.io/glossary/pagerduty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/pagerduty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pagination Components</title>
+      <link>https://russelltsherman.github.io/components/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/pagination/</guid>
+      <description>Previous 1 2 3 Next    Icons « Previous   1 2 3 » Next      Alignment Previous  1 2 3 Next     </description>
+    </item>
+    
+    <item>
+      <title>Parameter Store</title>
+      <link>https://russelltsherman.github.io/glossary/parameter-store/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/parameter-store/</guid>
+      <description>The Amazon Systems Manager Parameter Store provides secure, hierarchical storage for configuration data management and secrets management.
+You can store data such as passwords, database strings, and license codes as parameter values. You can store values as plain text or encrypted data using KMS. You can then reference values by using the unique name that you specified when you created the parameter. Highly scalable, available, and durable, Parameter Store is backed by the AWS Cloud.</description>
+    </item>
+    
+    <item>
+      <title>Pingdom</title>
+      <link>https://russelltsherman.github.io/glossary/pingdom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/pingdom/</guid>
+      <description>Pingdom is a service that tracks the availability (e.g. uptime &amp;amp; downtime) as well as the performance of websites. It’s been around for ages and is a tried-and-true method for being alerted when there’s an outage. They also have a feature called “Real User Monitoring” that uses a little bit of javascript to determine how fast your pages are loading for real end-users. Real-user-monitoring is essential for catching brown-outs where the site might be “up” but degraded.</description>
+    </item>
+    
+    <item>
+      <title>Platform-as-a-Service (PaaS)</title>
+      <link>https://russelltsherman.github.io/glossary/paas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/paas/</guid>
+      <description>A Platform-as-a-Service is a type of cloud platform which offers black-box services that enable developers to build applications on top of the compute infrastructure without needing to deal with the day-to-day maintenance of the infrastructure. This might include developer tools that are offered as a service to build services, or data access and database services, or billing services.</description>
+    </item>
+    
+    <item>
+      <title>Polyrepo</title>
+      <link>https://russelltsherman.github.io/glossary/polyrepo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/polyrepo/</guid>
+      <description>See also monorepo.</description>
+    </item>
+    
+    <item>
+      <title>Relational Database Service (RDS)</title>
+      <link>https://russelltsherman.github.io/glossary/rds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/rds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Release Engineering</title>
+      <link>https://russelltsherman.github.io/glossary/release-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/release-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RSI Reports</title>
+      <link>https://russelltsherman.github.io/reports/rsi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/reports/rsi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Running `init-terraform` fails: `Permission denied (publickey)`</title>
+      <link>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</guid>
+      <description>Question When running init-terraform, it fails while trying to fetch a private github repository.
+init-terraform Mounted buckets Filesystem Mounted on eg-staging-terraform-state /secrets/tf Initializing modules... - module.identity Getting source &amp;quot;git::git@github.com:cloudposse/terraform-aws-account-metadata.git?ref=tags/0.1.0&amp;quot; Error downloading modules: Error loading modules: error downloading &#39;ssh://git@github.com/cloudposse/terraform-aws-account-metadata.git?ref=tags%2F0.1.0&#39;: /usr/bin/git exited with 128: Cloning into &#39;.terraform/modules/ce64520f6f20f6ef2bd2674d5f00db4d&#39;... Warning: Permanently added the RSA host key for IP address &#39;194.31.252.103&#39; to the list of known hosts. Permission denied (publickey). fatal: Could not read from remote repository.</description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>https://russelltsherman.github.io/glossary/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3 Bucket</title>
+      <link>https://russelltsherman.github.io/glossary/s3-bucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/s3-bucket/</guid>
+      <description>Think of an S3 bucket as a top-level folder. It must be globally unique on AWS across all customers and accounts.</description>
+    </item>
+    
+    <item>
+      <title>s3fs</title>
+      <link>https://russelltsherman.github.io/glossary/s3fs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/s3fs/</guid>
+      <description>The geodesic implements an s3fs using goofys.</description>
+    </item>
+    
+    <item>
+      <title>sandbox</title>
+      <link>https://russelltsherman.github.io/development/sandbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/development/sandbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sandbox Environment</title>
+      <link>https://russelltsherman.github.io/glossary/sandbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/sandbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secrets Management Anti-patterns</title>
+      <link>https://russelltsherman.github.io/secrets/anti-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/anti-patterns/</guid>
+      <description>There are a number of things that should be avoided at all costs.
+Never Share Logins Do not let users within your organization share login credentials. If logins are shared, then secrets need to be rotated everytime someone leaves the company. Also, audit trails are ineffective as they cannot adequately attribute changes made by individuals.
+Security through Obscurity Obfuscation is a trap that offers only a false-sense of security. Systems that rely largely on obfuscastion are dangerously insecure.</description>
+    </item>
+    
+    <item>
+      <title>Secrets Management Best Practices</title>
+      <link>https://russelltsherman.github.io/secrets/best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/best-practices/</guid>
+      <description>Security by Design Never Share Secrets Between Stages Rotate Secrets Frequently Automate Key Rotation Audit Trails Encrypted at Rest TLS Everywhere MFA Everywhere Password-based security is not sufficient. Too many passwords have been compromised over the years and aggregated as part of massive rainbow tables which make password cracking much more effective. Othertimes, users simply share passwords with eachother and forget to change them. The best wat to mitigate the usefulness of a credential (e.</description>
+    </item>
+    
+    <item>
+      <title>Semantic Version</title>
+      <link>https://russelltsherman.github.io/glossary/semver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/semver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Level Agreement</title>
+      <link>https://russelltsherman.github.io/glossary/sla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/sla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shared Memory Filesystem (/dev/shm)</title>
+      <link>https://russelltsherman.github.io/glossary/dev-shm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/dev-shm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sidekick Containers</title>
+      <link>https://russelltsherman.github.io/glossary/sidekick-containers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/sidekick-containers/</guid>
+      <description>Examples of common sidekick containers are for service discovery or loading fixtures into a development database.</description>
+    </item>
+    
+    <item>
+      <title>Simple Notification Service (SNS)</title>
+      <link>https://russelltsherman.github.io/glossary/sns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/sns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Single Sign-on (SSO)</title>
+      <link>https://russelltsherman.github.io/glossary/sso/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/sso/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slack</title>
+      <link>https://russelltsherman.github.io/glossary/slack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/slack/</guid>
+      <description>Visit Slack.com for more details.</description>
+    </item>
+    
+    <item>
+      <title>Software Development Lifecycle (SDLC)</title>
+      <link>https://russelltsherman.github.io/glossary/sdlc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/sdlc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software-as-a-Service (SaaS)</title>
+      <link>https://russelltsherman.github.io/glossary/saas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/saas/</guid>
+      <description>Sofware-as-a-Service is a form of a cloud services platform, whereby the computing platform (operating system and associated services) is delivered as a service over the Internet by the provider.</description>
+    </item>
+    
+    <item>
+      <title>SRE Monitors</title>
+      <link>https://russelltsherman.github.io/monitoring/sre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/monitoring/sre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stage</title>
+      <link>https://russelltsherman.github.io/glossary/stage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/stage/</guid>
+      <description>It&amp;rsquo;s important to note that within a given stage, there might be multiple environments. We always prescribe separating multiple stages by using multiple AWS accounts or organizational units. Then provisioning multiple environments within that stage as necessary.
+For example, the &amp;ldquo;staging&amp;rdquo; account might run &amp;ldquo;pre-production&amp;rdquo; and &amp;ldquo;QA&amp;rdquo; environments.</description>
+    </item>
+    
+    <item>
+      <title>String Interpolation</title>
+      <link>https://russelltsherman.github.io/glossary/interpolation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/interpolation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subject Matter Expertise (SME)</title>
+      <link>https://russelltsherman.github.io/glossary/sme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/sme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthetic Monitoring</title>
+      <link>https://russelltsherman.github.io/glossary/synthetic-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/synthetic-monitoring/</guid>
+      <description>Synthetic monitoring is a style of monitoring that attempts to closely emulate the behavior of an end-user, often by using scripted recordings of web transactions played back through a web browser using plugin like Selenium. The scripts carry out behaviors (such as traversing paths) to simulate an action that a customer or end-user would take on a site. E.g. we highly recommend testing all user registration flows and password reset forms using this methodology.</description>
+    </item>
+    
+    <item>
+      <title>Technical Debt</title>
+      <link>https://russelltsherman.github.io/glossary/technical-debt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/technical-debt/</guid>
+      <description>It should be noted that the cost of tech debt is very real. It manifests in the form of engineering costs to address the problem, opportunity costs of fixing it versus working on new features, and business costs such as lost revenue from frustrated customers.
+References The best article ever written on &amp;ldquo;Tech Debt&amp;rdquo;, is by Bill Clark at Riot Games.
+ https://engineering.riotgames.com/news/taxonomy-tech-debt 
+ </description>
+    </item>
+    
+    <item>
+      <title>Terraform fails while applying plan: resource does not have attribute</title>
+      <link>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</guid>
+      <description>Question While attempting to run terraform apply, the execution failed with the following error:
+Error: Error applying plan: 6 error(s) occurred: * module.aurora_postgres.module.dns_replicas.output.hostname: Resource &#39;aws_route53_record.default&#39; does not have attribute &#39;fqdn&#39; for variable &#39;aws_route53_record.default.*.fqdn&#39; * module.aurora_postgres.output.password: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;master_password&#39; for variable &#39;aws_rds_cluster.default.*.master_password&#39; * module.aurora_postgres.output.user: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;master_username&#39; for variable &#39;aws_rds_cluster.default.*.master_username&#39; * module.aurora_postgres.output.cluster_name: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;cluster_identifier&#39; for variable &#39;aws_rds_cluster.default.*.cluster_identifier&#39; * module.</description>
+    </item>
+    
+    <item>
+      <title>Terraform Secrets Management</title>
+      <link>https://russelltsherman.github.io/secrets/terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/terraform/</guid>
+      <description>Terraform supports 12-factor style environment variables. Thus we prescribe using a combination of terraform environment variables and chamber.
+Usage First, review our documentation on using chamber to manage secrets.
+Access Secrets from HCL To access secrets within terraform code, simply refer to a variable. Do not set a default value to enforce that the value come from the environment.
+variable &amp;#34;POSTGRES_PASSWORD&amp;#34; { description = &amp;#34;Master password for Postgres database&amp;#34; } Since chamber will export all environment variables as strictly upper case, make sure that you define all variables in terraform in upper case as well.</description>
+    </item>
+    
+    <item>
+      <title>Topology</title>
+      <link>https://russelltsherman.github.io/glossary/topology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/topology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unlimited Staging Environments</title>
+      <link>https://russelltsherman.github.io/glossary/unlimited-staging-environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/unlimited-staging-environments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Secrets with CI/CD</title>
+      <link>https://russelltsherman.github.io/secrets/cicd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/cicd/</guid>
+      <description>We advocate using chamber with all CI/CD pipelines to access secrets. Chamber provides a universal interface and a single &amp;ldquo;system of record&amp;rdquo; for storing and rotating secrets.
+Enabling CI/CD systems to access chamber depends on the CI/CD solution. For CodeBuild/CodePipeline, it&amp;rsquo;s possible to leverage IAM Roles to grant access to KMS+SSM, while for other systems which are external to AWS, it&amp;rsquo;s necessary to provision a chamber IAM user with a very limited scope (the link provides an example for how we do this using terraform).</description>
+    </item>
+    
+    <item>
+      <title>Virtual Private Cloud (VPC)</title>
+      <link>https://russelltsherman.github.io/glossary/vpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/vpc/</guid>
+      <description>A virtual private cloud (“VPC”) is an isolated environment running inside of a public cloud. You can think of it like a private data center with its own private subnets and resources. A VPC can also be an extension of a physical datacenter. The most common example of a VPC is the service that Amazon offers called “Amazon VPC” which allows customers to make Amazon EC2 an extension to their physical infrastructure using an IPsec VPN tunnel.</description>
+    </item>
+    
+    <item>
+      <title>yq</title>
+      <link>https://russelltsherman.github.io/glossary/yq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/yq/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

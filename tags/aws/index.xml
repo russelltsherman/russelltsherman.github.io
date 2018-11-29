@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/aws/</link>
+    <description>Recent content in aws on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amazon Certificate Manager (ACM)</title>
+      <link>https://russelltsherman.github.io/glossary/acm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/acm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon Machine Image (AMI)</title>
+      <link>https://russelltsherman.github.io/glossary/ami/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ami/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon Systems Manager (SSM)</title>
+      <link>https://russelltsherman.github.io/glossary/ssm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ssm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS KMS&#43;S3 File Storage</title>
+      <link>https://russelltsherman.github.io/secrets/aws-kms-s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/aws-kms-s3/</guid>
+      <description>The AWS KMS+S3 pattern involves provisioning an S3 bucket which enforces encryption at rest together with KMS.
+In geodesic, we use this together with goofys and our s3fs wrapper scripts to mount the encrypted bucket to a local mount point inside the geodesic container. This is an awesome solution for securely storing file-based secrets (e.g. ssh master keys).</description>
+    </item>
+    
+    <item>
+      <title>aws-vault</title>
+      <link>https://russelltsherman.github.io/glossary/aws-vault/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/aws-vault/</guid>
+      <description>aws-vault is a utility for securely managing secrets with AWS Systems Manager (SSM) Parameter Store and KMS</description>
+    </item>
+    
+    <item>
+      <title>Chamber</title>
+      <link>https://russelltsherman.github.io/glossary/chamber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/chamber/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudFront</title>
+      <link>https://russelltsherman.github.io/glossary/cloudfront/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudfront/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudTrail</title>
+      <link>https://russelltsherman.github.io/glossary/cloudtrail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudtrail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudWatch</title>
+      <link>https://russelltsherman.github.io/glossary/cloudwatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudwatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudWatch Logs</title>
+      <link>https://russelltsherman.github.io/glossary/cloudwatch-logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cloudwatch-logs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CodeBuild</title>
+      <link>https://russelltsherman.github.io/glossary/code-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/code-build/</guid>
+      <description>CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue. Because CodeBuild runs in AWS, it can leverage IAM Instance Profiles to assume roles to securely provision resources without exposing AWS access credentials.</description>
+    </item>
+    
+    <item>
+      <title>CodeDeploy</title>
+      <link>https://russelltsherman.github.io/glossary/code-deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/code-deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CodePipeline</title>
+      <link>https://russelltsherman.github.io/glossary/code-pipeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/code-pipeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECS</title>
+      <link>https://russelltsherman.github.io/glossary/ecs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECS Service</title>
+      <link>https://russelltsherman.github.io/glossary/ecs-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecs-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECS Task</title>
+      <link>https://russelltsherman.github.io/glossary/ecs-task/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecs-task/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elastic Container Registry (ECR)</title>
+      <link>https://russelltsherman.github.io/glossary/ecr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/ecr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ElasticBeanstalk (EB)</title>
+      <link>https://russelltsherman.github.io/glossary/eb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/eb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Goofys</title>
+      <link>https://russelltsherman.github.io/glossary/goofys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/goofys/</guid>
+      <description>Learn more about how to use goofys and how we use it with geodeisc.</description>
+    </item>
+    
+    <item>
+      <title>HashiCorp Terraform</title>
+      <link>https://russelltsherman.github.io/glossary/terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identity Access Management (IAM)</title>
+      <link>https://russelltsherman.github.io/glossary/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/iam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Key Management Service (KMS)</title>
+      <link>https://russelltsherman.github.io/glossary/kms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kms/</guid>
+      <description>AWS Key Management Service is integrated with most other AWS services to help you protect the data you store with these services. AWS Key Management Service is also integrated with AWS CloudTrail to provide you with logs of all key usage to help meet your regulatory and compliance needs.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Ops (kops)</title>
+      <link>https://russelltsherman.github.io/glossary/kops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://russelltsherman.github.io/glossary/lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parameter Store</title>
+      <link>https://russelltsherman.github.io/glossary/parameter-store/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/parameter-store/</guid>
+      <description>The Amazon Systems Manager Parameter Store provides secure, hierarchical storage for configuration data management and secrets management.
+You can store data such as passwords, database strings, and license codes as parameter values. You can store values as plain text or encrypted data using KMS. You can then reference values by using the unique name that you specified when you created the parameter. Highly scalable, available, and durable, Parameter Store is backed by the AWS Cloud.</description>
+    </item>
+    
+    <item>
+      <title>Relational Database Service (RDS)</title>
+      <link>https://russelltsherman.github.io/glossary/rds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/rds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>https://russelltsherman.github.io/glossary/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3 Bucket</title>
+      <link>https://russelltsherman.github.io/glossary/s3-bucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/s3-bucket/</guid>
+      <description>Think of an S3 bucket as a top-level folder. It must be globally unique on AWS across all customers and accounts.</description>
+    </item>
+    
+    <item>
+      <title>Simple Notification Service (SNS)</title>
+      <link>https://russelltsherman.github.io/glossary/sns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/sns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terraform fails while applying plan: resource does not have attribute</title>
+      <link>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</guid>
+      <description>Question While attempting to run terraform apply, the execution failed with the following error:
+Error: Error applying plan: 6 error(s) occurred: * module.aurora_postgres.module.dns_replicas.output.hostname: Resource &#39;aws_route53_record.default&#39; does not have attribute &#39;fqdn&#39; for variable &#39;aws_route53_record.default.*.fqdn&#39; * module.aurora_postgres.output.password: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;master_password&#39; for variable &#39;aws_rds_cluster.default.*.master_password&#39; * module.aurora_postgres.output.user: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;master_username&#39; for variable &#39;aws_rds_cluster.default.*.master_username&#39; * module.aurora_postgres.output.cluster_name: Resource &#39;aws_rds_cluster.default&#39; does not have attribute &#39;cluster_identifier&#39; for variable &#39;aws_rds_cluster.default.*.cluster_identifier&#39; * module.</description>
+    </item>
+    
+    <item>
+      <title>Virtual Private Cloud (VPC)</title>
+      <link>https://russelltsherman.github.io/glossary/vpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/vpc/</guid>
+      <description>A virtual private cloud (“VPC”) is an isolated environment running inside of a public cloud. You can think of it like a private data center with its own private subnets and resources. A VPC can also be an extension of a physical datacenter. The most common example of a VPC is the service that Amazon offers called “Amazon VPC” which allows customers to make Amazon EC2 an extension to their physical infrastructure using an IPsec VPN tunnel.</description>
+    </item>
+    
+  </channel>
+</rss>

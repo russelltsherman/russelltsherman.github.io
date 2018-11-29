@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>installer on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/installer/</link>
+    <description>Recent content in installer on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/installer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Packages</title>
+      <link>https://russelltsherman.github.io/tools/packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/packages/</guid>
+      <description>&amp;ldquo;Packages&amp;rdquo; is the Cloud Posse distribution of native apps. Use this repo to easily install binary releases of popular apps such as all of our standard tools. This is useful for inclusion into a Dockerfile to install dependencies.
+Usage Clone the repo.
+git clone git@github.com:cloudposse/packages.git See all available packages:
+make -C packages/install help Install everything&amp;hellip;
+make -C packages/install all Install specific packages:
+make -C packages/install aws-vault chamber Install to a specific folder:</description>
+    </item>
+    
+  </channel>
+</rss>

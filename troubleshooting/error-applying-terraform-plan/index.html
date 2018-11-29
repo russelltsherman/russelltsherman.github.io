@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Terraform fails while applying plan: resource does not have attribute</title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/syntax.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../css/custom.css" />
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    .article p,
+    .article ul,
+    .article ol,
+    .article blockquote {
+      max-width: 45em;
+    }
+
+    .article p:first-child {
+      font-size: 1.25em;
+      font-weight: 300;
+      max-width: 36em;
+       
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="../../">Russell T Sherman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../about/" title="">About</a>
+            </li>
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../tools/" title="">Tools</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+<nav aria-label="breadcrumb navbar-dark">
+    <ol class="breadcrumb">
+        
+
+
+
+
+
+
+
+ <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/'>Home</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/troubleshooting/'>Troubleshooting</a></li> <li class='breadcrumb-item active' aria-current='page'>Terraform fails while applying plan: resource does not have attribute</li>
+
+
+
+
+
+
+    </ol>
+</nav>
+
+
+<div class="container">
+  <h1>Terraform fails while applying plan: resource does not have attribute</h1>
+
+  <h2 id="question">Question</h2>
+<p>While attempting to run <code>terraform apply</code>, the execution failed with the following error:</p>
+<pre><code>Error: Error applying plan:
+
+6 error(s) occurred:
+
+* module.aurora_postgres.module.dns_replicas.output.hostname: Resource 'aws_route53_record.default' does not have attribute 'fqdn' for variable 'aws_route53_record.default.*.fqdn'
+* module.aurora_postgres.output.password: Resource 'aws_rds_cluster.default' does not have attribute 'master_password' for variable 'aws_rds_cluster.default.*.master_password'
+* module.aurora_postgres.output.user: Resource 'aws_rds_cluster.default' does not have attribute 'master_username' for variable 'aws_rds_cluster.default.*.master_username'
+* module.aurora_postgres.output.cluster_name: Resource 'aws_rds_cluster.default' does not have attribute 'cluster_identifier' for variable 'aws_rds_cluster.default.*.cluster_identifier'
+* module.aurora_postgres.module.dns_master.output.hostname: Resource 'aws_route53_record.default' does not have attribute 'fqdn' for variable 'aws_route53_record.default.*.fqdn'
+* module.aurora_postgres.output.name: Resource 'aws_rds_cluster.default' does not have attribute 'database_name' for variable 'aws_rds_cluster.default.*.database_name'
+</code></pre><p>This was previously working and only broke after upgrading the underlying module release.</p>
+<p>The module had made a significant change which involved adding a <code>count</code> parameter to underlying resources.</p>
+<h2 id="answer">Answer</h2>
+<p>We&rsquo;ve encountered this error as well, although it happens very seldom. Basically what happens is that terraform chokes because it is referencing some old <code>output</code> names from a previous generation. We don&rsquo;t know how to avoid it, but rerunning <code>terraform apply</code> tends to fix it. Please contact us by clicking the &ldquo;Ask a Question&rdquo; link, if this does not resolve your issues.</p>
+
+</div>
+<div id="navigation" class="container clearfix">
+<div class="float-left">
+        <a class="nav nav-prev" href="../../troubleshooting/init-terraform-fails/" title="Running `init-terraform` fails: `Permission denied (publickey)`">
+            <label>&lt;&lt; Running `init-terraform` fails: `Permission denied (publickey)`</label>
+        </a>
+    </div>
+    <div class="float-right">
+        <a class="nav nav-next" href="../../troubleshooting/aws-vault-outputs-key-and-does-nothing/" title="aws-vault outputs `&#39;aws_access_key_id&#39;` message and does nothing" style="margin-right: 0px;">
+            <label>aws-vault outputs `&#39;aws_access_key_id&#39;` message and does nothing >></label>
+        </a>
+    </div></div>
+</div><footer class="footer mt-5">
+</footer>
+
+</body>
+</html>

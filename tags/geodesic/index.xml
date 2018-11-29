@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geodesic on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/geodesic/</link>
+    <description>Recent content in Geodesic on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/geodesic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>aws-vault outputs `&#39;aws_access_key_id&#39;` message and does nothing</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</guid>
+      <description>Question When calling aws-vault exec or using assume-role in geodesic, a single line is output that simply says:
+&#39;aws_access_key_id&#39; Answer This is usually because there&amp;rsquo;s a [default] section in your ~/.aws/config. Remove that and it should start to work.</description>
+    </item>
+    
+    <item>
+      <title>aws-vault: error: Failed to get credentials ... aes.KeyUnwrap(): integrity check failed.</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</guid>
+      <description>Question When calling aws-vault exec or attempting to assume-role, I get the following error:
+Enter passphrase to unlock /conf/.awsvault/keys/: aws-vault: error: Failed to get credentials for peerstreet (source profile for cp-root-admin): aes.KeyUnwrap(): integrity check failed. Answer This horribly cryptic error message is a cryptographers way of saying &amp;ldquo;wrong password&amp;rdquo;. Just try running the command again, but this time enter the correct password. =)</description>
+    </item>
+    
+    <item>
+      <title>aws-vault: error: Failed to start credential server</title>
+      <link>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</guid>
+      <description>Question When running aws-vault or assume-role, I get the following error:
+aws-vault: error: Failed to start credential server: listen tcp 127.0.0.1:9099: bind: address already in use Answer This is usually caused by another geodesic shell running. This happens because aws-vault server can only be run once. Try exiting your other geodesic shell.</description>
+    </item>
+    
+    <item>
+      <title>Geodesic</title>
+      <link>https://russelltsherman.github.io/glossary/geodesic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/geodesic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geodesic Module</title>
+      <link>https://russelltsherman.github.io/glossary/geodesic-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/geodesic-module/</guid>
+      <description>Usually we create geodesic modules that correspond to each AWS organization.
+For example, the standard geodesic modules are:
+ root.cloudposse.org - a module which is reponsible for administering the root AWS account and provisioning all subaccounts (organizations). prod.cloudposse.org - a module which is responsible for provisioning all production infrastructure including production kops clusters and backing services (E.g. rds) staging.cloudposse.org - a module which is responsible for provisioning all staging resources dev.</description>
+    </item>
+    
+    <item>
+      <title>Geodesic Shell</title>
+      <link>https://russelltsherman.github.io/glossary/geodesic-shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/geodesic-shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Ops (kops)</title>
+      <link>https://russelltsherman.github.io/glossary/kops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Packages</title>
+      <link>https://russelltsherman.github.io/tools/packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/packages/</guid>
+      <description>&amp;ldquo;Packages&amp;rdquo; is the Cloud Posse distribution of native apps. Use this repo to easily install binary releases of popular apps such as all of our standard tools. This is useful for inclusion into a Dockerfile to install dependencies.
+Usage Clone the repo.
+git clone git@github.com:cloudposse/packages.git See all available packages:
+make -C packages/install help Install everything&amp;hellip;
+make -C packages/install all Install specific packages:
+make -C packages/install aws-vault chamber Install to a specific folder:</description>
+    </item>
+    
+    <item>
+      <title>Running `init-terraform` fails: `Permission denied (publickey)`</title>
+      <link>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</guid>
+      <description>Question When running init-terraform, it fails while trying to fetch a private github repository.
+init-terraform Mounted buckets Filesystem Mounted on eg-staging-terraform-state /secrets/tf Initializing modules... - module.identity Getting source &amp;quot;git::git@github.com:cloudposse/terraform-aws-account-metadata.git?ref=tags/0.1.0&amp;quot; Error downloading modules: Error loading modules: error downloading &#39;ssh://git@github.com/cloudposse/terraform-aws-account-metadata.git?ref=tags%2F0.1.0&#39;: /usr/bin/git exited with 128: Cloning into &#39;.terraform/modules/ce64520f6f20f6ef2bd2674d5f00db4d&#39;... Warning: Permanently added the RSA host key for IP address &#39;194.31.252.103&#39; to the list of known hosts. Permission denied (publickey). fatal: Could not read from remote repository.</description>
+    </item>
+    
+  </channel>
+</rss>

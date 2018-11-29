@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/tools/</link>
+    <description>Recent content in tools on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1Password for Teams</title>
+      <link>https://russelltsherman.github.io/tools/1password/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/1password/</guid>
+      <description>The 1Password for Teams product by AgileBits is argubably the most popular SaaS-based password management tool. In our opinion, it offers a better user experience over apps like LastPass as well as provides integration with Duo and Slack for real-time activity notifications.
+Best Practices Here are some of our recommended practices for working with 1Password. If your organization choses an alternative password management solution, we recommend implementing compensating controls.
+Enable Real-time Slack Notifications With real-time slack notifications, you&amp;rsquo;ll be able to monitor logins for anomalies.</description>
+    </item>
+    
+    <item>
+      <title>AWS Cli</title>
+      <link>https://russelltsherman.github.io/tools/aws-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/aws-cli/</guid>
+      <description>Tips &amp;amp; Tricks Delete all versions of objects in an S3 bucket
+export BUCKET=foobar aws s3api delete-objects --bucket $BUCKET \  --delete &amp;#34;$(aws s3api list-object-versions --bucket $BUCKET | \  jq -M &amp;#39;{Objects: [.[&amp;#34;Versions&amp;#34;,&amp;#34;DeleteMarkers&amp;#34;][]|select(.Key == &amp;#34;key-value&amp;#34;)| {Key:.Key, VersionId:.VersionId}], Quiet: false}&amp;#39;)&amp;#34; via: stackoverflow</description>
+    </item>
+    
+    <item>
+      <title>AWS Vault</title>
+      <link>https://russelltsherman.github.io/tools/aws-vault/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/aws-vault/</guid>
+      <description>The aws-vault command line tool by 99 Designs is a utility for securely storing and accessing encrypted AWS credentials for use in development environments. This tool makes it extremely easy to work with IAM assumed roles across multiple AWS organizations.
+Info aws-vault has no relationship to the HashiCorp Vault.
+ Features:
+ Encrypted vault for IAM credentials (OSX KeyChain or file) IAM Metadata server (mocks the EC2 API) to simulate instance profiles for local development Prompts for MFA Token Variable-length session TTLs Compatible with ~/.</description>
+    </item>
+    
+    <item>
+      <title>Chamber</title>
+      <link>https://russelltsherman.github.io/tools/chamber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/chamber/</guid>
+      <description>Chamber is a CLI for managing secrets stored in AWS Systems Manager Parameter Store.
+In the article The Right Way to Store Secrets using Parameter Store, AWS recommends using chamber for secrets management.
+Configuration Prerequisites This assumes you&amp;rsquo;ve followed the AWS KMS guide which describes using Terraform to easily provision KMS+SSM resources for chamber.
+ Chamber with Geodesic From the Terraform outputs AWS KMS copy the chamber_kms_key_alias_name into the ENV var CHAMBER_KMS_KEY_ALIAS in the geodesic module`s Dockerfile.</description>
+    </item>
+    
+    <item>
+      <title>Goofys</title>
+      <link>https://russelltsherman.github.io/tools/goofys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/goofys/</guid>
+      <description>Goofys is similar to the original s3fs FUSE filesystem, but written in Golang and much, much faster. Also, it works seamlessly with EC2 instance profiles for assumed-roles, which s3fs-fuse does not support as of v1.82.
+The reason why goofys is faster is that it implements a subset of the POSIX filesystem semantics. Namely, it only supports read, write and append operations. This makes it suitable for many simple use-cases, but not suitable for running things like a database.</description>
+    </item>
+    
+    <item>
+      <title>Helm</title>
+      <link>https://russelltsherman.github.io/tools/helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/helm/</guid>
+      <description>Helm Logo   Helm makes it easy to install charts (an application) on kubernetes clusters. Just like npm or apt make it easy to install NodeJS modules and Debian packages, helm makes it easy to deploy a full-fledged application with all of its dependencies on kubernetes.
+Install Tiller The helm tiller is the server-side component of Helm. It&amp;rsquo;s used to cordinate with the kubernetes cluster in order to deploy resources (E.</description>
+    </item>
+    
+    <item>
+      <title>Helmfile</title>
+      <link>https://russelltsherman.github.io/tools/helmfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/helmfile/</guid>
+      <description>We use helmfile to deploy collections of charts as part of geodesic. The helmfile.yaml is a declarative configuration file that makes it easier to deploy and manage a large number of helm charts.
+Another way to think about it is like this:
+ If helm is responsible for deploying a single application to kubernetes, then helmfile is responsible for deploying multiple applications by calling helm.
+ Features  12-Factor Style Configurations - Parameterize all charts using Environment Variables Inline values.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Static Site Generator</title>
+      <link>https://russelltsherman.github.io/tools/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/hugo/</guid>
+      <description>Hugo Static Site Generator   Hugo is one of the most popular open-source static site generators. It also happens to be a rediculously fast framework for building static websites. We use it to build our documentation.
+What we like about it is that it&amp;rsquo;s written in Go, speaks &amp;ldquo;markdown&amp;rdquo; and uses Go-templates for rendering all pages.
+Want to host your own static site? Here&amp;rsquo;s how we do it.</description>
+    </item>
+    
+    <item>
+      <title>Keybase</title>
+      <link>https://russelltsherman.github.io/tools/keybase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/keybase/</guid>
+      <description>Install Keybase  image rendered using shortcode   </description>
+    </item>
+    
+    <item>
+      <title>Kops</title>
+      <link>https://russelltsherman.github.io/tools/kops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/kops/</guid>
+      <description>  Kops   Quick Start These instructions are based on Geodesic, which is a cluster shell that contains a mashup of tools like kops, terraform, kubectl.
+Building Cluster Start a Geodesic cluster shell.
+assume-role kops create -f /conf/kops/manifest.yml </description>
+    </item>
+    
+  </channel>
+</rss>

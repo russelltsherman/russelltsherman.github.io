@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/posts/</link>
+    <description>Recent content in Posts on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
+    
+	<atom:link href="https://russelltsherman.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Release Tracking</title>
+      <link>https://russelltsherman.github.io/posts/release-tracking/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://russelltsherman.github.io/posts/release-tracking/</guid>
+      <description>Here&amp;rsquo;s quick and easy way to be notified when software projects that you care about publish new releases.
+Register for free account on blogtrottr.com click the link to Subscribe to a new feed find the URL for the software project you want to know of new releases  for schedule select daily digest  subscribe to monitor atom feed  New Subscription  blogtrottr will now check each of these once per day and notify you of new releases</description>
+    </item>
+    
+  </channel>
+</rss>

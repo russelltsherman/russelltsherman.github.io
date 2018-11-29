@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/aws/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/.env/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/12-factor/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/12-factor/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/1password/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/acl/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/alert/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/alert-escalations/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/acm/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/ami/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/ssm/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/anti-pattern/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/apache2/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/audit-logs/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/automated-deployments/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/availability-zone/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/aws/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/aws/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/aws-cli/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/aws-kms-s3/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/aws-kms-ssm/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/aws-vault/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/aws-cli/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/aws-vault/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/aws-vault/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/troubleshooting/aws-vault-outputs-key-and-does-nothing/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-get-credentials/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/troubleshooting/aws-vault-error-failed-to-start-credential-server/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/badge/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/bastion/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/bastion/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/best-practices/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/best-practice/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/best-practices/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/reports/bevager/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/beyondcorp/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/bootstrap/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/breadcrumb/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/build-harness/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/business-logic/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/button/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/button-group/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/troubleshooting/calling-chamber-write-triggers-error/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/cattle/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/cdn/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/chamber/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/chamber/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/chamber/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/change-control/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/change-control/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/change-management/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/chart-registry/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/chartmuseum/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/ci/cd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/ci/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/circleci/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/cli/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/cli/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/cloud-native/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/cloudposse/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/cloudfront/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/cloudposse/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/cloudtrail/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/cloudwatch/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/cloudwatch/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/cloudwatch-logs/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/cmp/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/code/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/code-review/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/code-build/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/codebuild/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/code-deploy/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/codefresh/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/codefresh/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/code-pipeline/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/codepipeline/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/colors/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/configuration-management/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/container-management-platform/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/cmp/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/continuous-delivery/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/continuous-integration/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/cicd/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/crud/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/database/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/declarative/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/release/deployment/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/dev/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/development/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/development/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/development/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/devops/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/docker/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/docker/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/docker/best-practices/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/docker-compose/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/docker-hub/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/docker-image/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/docker-image/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/docker-registry/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/docker/tips-tricks/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/dockerfile/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/dockerfile/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/dry/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/dotenv/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/duo/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/ec2/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/ecr/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/ecs/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/ecs/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/ecs-agent/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/ecs-service/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/ecs-task/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/ecr/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/eb/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/e2e/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/environment/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/environment-variable/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/environment-variables/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/troubleshooting/helm-upgrade-failed-to-create-resource/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/executable-documentation/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/faq/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/fluentd/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/fuse/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/fuse/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/geodesic/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/geodesic/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/geodesic-module/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/geodesic-shell/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/git-workflow/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/gnumakefile/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/go-template/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/gomplate/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/goofys/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/goofys/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/goofys/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/google/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/hashicorp/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/hcl/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/terraform/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/hcl/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/helm/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/helm/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/helm/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/helm-chart/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/helm-chart/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/helm-charts/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/helm-manifest/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/helm-tiller/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/helmfile/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/helmfile/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/helmfile.yaml/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/heroku/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/hugo/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/iaac/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/iaas/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/iac/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/iam/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/iap/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/iap/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/iam/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/identity-aware-proxy/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/imperative/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/infrastructure/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/infrastructure-as-code/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/ingress-controller/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/init-terraform/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/init-terraform/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/installer/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/jenkins/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/jq/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/jq/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/jumpcloud/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/jumphost/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/k8s/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/kanban/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/kms/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/kpi/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/keybase/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/keybase/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/kms/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/kops/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/kops/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/kops-manifest/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/kubectl/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/kubectl/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/kubernetes/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/kubernetes/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/kubernetes-jobs/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/kubernetes-manifest/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/kops/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/lambda/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/layer-1/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/layer-2/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/layer-3/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/layer-4/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/layer-5/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/layer-6/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/layer-7/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/layer-7/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/load-balancer/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/reports/logi/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/logmein/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/make/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/makefile/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/make/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/make/best-practices/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/make/makefile-examples/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/manifest/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/mesos/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/monitoring/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/monitoring/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/monorepo/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/monorepo/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/mfa/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/okta/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/on-call/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/oce/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/osi/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/osi/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/paas/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/packages/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/pagerduty/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/components/pagination/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/parameter-store/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/password-management/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/pingdom/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/pki/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/paas/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/pods/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/polyrepo/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/polyrepo/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/prod/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/pull-request/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/qa/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/references/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/rds/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/release-engineering/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/release/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/reports/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/reports/rsi/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/troubleshooting/init-terraform-fails/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/s3/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/s3/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/s3-bucket/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/s3fs/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/s3fs/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/saas/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/development/sandbox/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/sandbox/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/sdlc/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/secrets/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/anti-patterns/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/best-practices/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/security/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/selenium/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/semver/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/semver/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/sla/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/dev-shm/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/sidekick-containers/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/sns/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/sso/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/slack/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/software-development/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/sdlc/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/saas/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/monitoring/sre/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/ssh/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/ssh-agent/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/ssm/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/sso/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/stage/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/staging/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/interpolation/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/sme/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/synthetic-monitoring/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/task-runner/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/technical-debt/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/terraform/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/troubleshooting/error-applying-terraform-plan/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/terraform/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/terraform-aws-tfstate-backend/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/terraform-modules/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/tfstate/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/tips-and-tricks/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/tls/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tools/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/tools/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/topology/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/travisci/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/troubleshooting/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/unlimited-staging-environments/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/secrets/cicd/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/virtual-machine-image/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/vpc/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/vpn/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/yaml/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/tags/yq/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://russelltsherman.github.io/glossary/yq/</loc>
+    <lastmod>2017-06-30T23:11:30-05:00</lastmod>
+  </url>
+  
+</urlset>

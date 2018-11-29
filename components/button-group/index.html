@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Button Group Components</title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/syntax.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../css/custom.css" />
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    .article p,
+    .article ul,
+    .article ol,
+    .article blockquote {
+      max-width: 45em;
+    }
+
+    .article p:first-child {
+      font-size: 1.25em;
+      font-weight: 300;
+      max-width: 36em;
+       
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="../../">Russell T Sherman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../about/" title="">About</a>
+            </li>
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../tools/" title="">Tools</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+<nav aria-label="breadcrumb navbar-dark">
+    <ol class="breadcrumb">
+        
+
+
+
+
+
+
+
+ <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/'>Home</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/components/'>Design</a></li> <li class='breadcrumb-item active' aria-current='page'>Button Group Components</li>
+
+
+
+
+
+
+    </ol>
+</nav>
+
+
+<div class="container">
+  <h1>Button Group Components</h1>
+
+  <h2 id="basic-example">Basic example</h2>
+<div class="bd-example">
+    <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+</div>
+<h2 id="button-toolbar">Button toolbar</h2>
+<div class="bd-example">
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-secondary">4</button>
+        </div>
+        <div class="btn-group mr-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-secondary">8</button>
+        </div>
+    </div>
+</div>
+<h2 id="sizing">Sizing</h2>
+<div class="bd-example">
+  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+  <br>
+  <div class="btn-group" role="group" aria-label="Default button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+  <br>
+  <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+</div>
+<h2 id="nesting">Nesting</h2>
+<div class="bd-example">
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link</a>
+            <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 id="vertical-variation">Vertical variation</h2>
+<div class="bd-example">
+  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop4" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div id="navigation" class="container clearfix">
+<div class="float-left">
+        <a class="nav nav-prev" href="../../components/button/" title="Button Components">
+            <label>&lt;&lt; Button Components</label>
+        </a>
+    </div>
+    <div class="float-right">
+        <a class="nav nav-next" href="../../components/code/" title="Code Components" style="margin-right: 0px;">
+            <label>Code Components >></label>
+        </a>
+    </div></div>
+</div><footer class="footer mt-5">
+</footer>
+
+</body>
+</html>

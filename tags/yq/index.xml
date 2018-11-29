@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yq on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/yq/</link>
+    <description>Recent content in yq on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/yq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>jq</title>
+      <link>https://russelltsherman.github.io/glossary/jq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/jq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yq</title>
+      <link>https://russelltsherman.github.io/glossary/yq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/yq/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

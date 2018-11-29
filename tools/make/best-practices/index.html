@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Makefile Best Practices</title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../../css/syntax.css" />
+  <link rel="stylesheet" href="../../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../../css/custom.css" />
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    .article p,
+    .article ul,
+    .article ol,
+    .article blockquote {
+      max-width: 45em;
+    }
+
+    .article p:first-child {
+      font-size: 1.25em;
+      font-weight: 300;
+      max-width: 36em;
+       
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="../../../">Russell T Sherman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../../about/" title="">About</a>
+            </li>
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../../tools/" title="">Tools</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+<nav aria-label="breadcrumb navbar-dark">
+    <ol class="breadcrumb">
+        
+
+
+
+
+
+
+
+
+
+
+ <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/'>Home</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/tools/'>Tools</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/tools/make/'>Makefile</a></li> <li class='breadcrumb-item active' aria-current='page'>Makefile Best Practices</li>
+
+
+
+
+
+
+
+
+    </ol>
+</nav>
+
+
+<div class="container">
+  <h1>Makefile Best Practices</h1>
+
+  <h1 id="avoid-using-evals">Avoid using Evals</h1>
+<p>The use of <code>$(eval ...)</code> leads to very confusing execution paths, due to the way <code>make</code> evaluates a target. When <code>make</code> executes a target, it preprocesses all <code>$(....)</code> interpolations and renders the template. After that, it executes, line-by-line each command in the target.</p>
+<h1 id="namespace-targets">Namespace targets</h1>
+<p>Over time, the number of targets in a <code>Makefile</code> will grow. We recommend namespacing all targets.</p>
+<p>For example:</p>
+<pre><code>docker/build:
+    docker build -t example/test .
+</code></pre><h1 id="use--as-a-target-namespace-delimiter">Use <code>/</code> as a target namespace delimiter</h1>
+<p>When naming target names, we recommend using <code>/</code> as the delimiter rather than <code>:</code> or <code>-</code>. Further more, we recommend sticking all targets within a namespace into a separate file. E.g. <code>Makefile.docker</code> for all targets that begin with <code>docker/</code>.</p>
+<p>For example, stick this in <code>Makefile.docker</code></p>
+<pre><code>docker/build:
+    docker build -t example/test .
+</code></pre><h1 id="avoid-using--in-target-names">Avoid using <code>:</code> in target names</h1>
+<p>While it&rsquo;s possible to use <code>:</code> as the delimiter in target names, there is a big gotcha: it breaks target dependencies.</p>
+<p>For example:</p>
+<pre><code>docker\:deps:
+    docker pull example/base-image
+
+docker\:build: docker:deps
+    docker build -t example/test
+</code></pre><p>In this example, <code>make</code> will silently ignore calling the target dependency of <code>docker:deps</code>. Escaping the target dependency (e.g. <code>docker\:deps</code>) has no effect.</p>
+<h1 id="use-include">Use <code>include</code></h1>
+<p>Avoid sticking every target in the same <code>Makefile</code> for the same reason we don&rsquo;t stick all code in the same source file. We typically recommend adding something like this to the top of our <code>Makefile</code>:</p>
+<pre><code>-include tasks/Makefile.*
+</code></pre><div class="dialog info">
+  <h4 class="dialog__title"><i class="fa fa fa-info-circle dialog__icon" aria-hidden="true"></i>Note</h4>
+  <p class="dialog__text"><blockquote>
+<p>The leading <code>-</code> tells <code>make</code> not to error if the <code>tasks/</code> folder is empty.</p>
+</blockquote></p>
+</div>
+<h1 id="define-sane-defaults-for-environment-variables">Define sane defaults for environment variables</h1>
+<p>No one likes to pass 20 arguments to <code>make</code>. Set sane defaults for all variables using the <code>?=</code> operator.</p>
+<p>For example:</p>
+<pre><code>DOCKER_TAG ?= latest
+</code></pre><h1 id="pass-environment-variables-like-function-arguments">Pass Environment Variables like Function Arguments</h1>
+<p>The nice thing about <code>make</code> is it will automatically export all arguments in <code>key=value</code> notation as environment variables. This let&rsquo;s us call <code>make</code> targets like functions.</p>
+<p>e.g.</p>
+<pre><code>make docker/build DOCKER_TAG=dev
+</code></pre><h1 id="write-small-targets">Write small targets</h1>
+<p>Make is an excellent language for gluing together various tools in your toolchain. It&rsquo;s an easy trap to stick an entire <code>bash</code> script inside of a target. From experience, these targets become error prone and difficult to maintain for anyone but a seasoned <code>make</code> programmer.</p>
+<p>Instead, stick complex logic inside of shell scripts and call those shell scripts from a target.</p>
+<h1 id="use-target-dependencies">Use target dependencies</h1>
+<p>A target can have dependencies called automatically prior to executing the target. If anyone of the dependencies fails, the execution aborts and the target will not be called.</p>
+<p>For example:</p>
+<pre><code>deps:
+    @which docker
+
+build: deps
+    @docker build -t example/test .
+</code></pre><h1 id="use-standard-target-names-in-root-makefile">Use standard target names in root <code>Makefile</code></h1>
+<p>The entry-level <code>Makefile</code> should define these standard targets across all projects. This makes it very easy for anyone to get started who is familiar with <code>make</code>.</p>
+<ul>
+<li><code>deps</code></li>
+<li><code>build</code></li>
+<li><code>install</code></li>
+<li><code>default</code></li>
+<li><code>all</code></li>
+</ul>
+<h1 id="document-targets">Document targets</h1>
+<h1 id="define-help-target">Define <code>help</code> target</h1>
+
+</div>
+<div id="navigation" class="container clearfix">
+<div class="float-left">
+        <a class="nav nav-prev" href="../../../tools/make/" title="Makefile">
+            <label>&lt;&lt; Makefile</label>
+        </a>
+    </div>
+    <div class="float-right">
+        <a class="nav nav-next" href="../../../tools/make/makefile-examples/" title="Makefile Examples" style="margin-right: 0px;">
+            <label>Makefile Examples >></label>
+        </a>
+    </div></div>
+</div><footer class="footer mt-5">
+</footer>
+
+</body>
+</html>

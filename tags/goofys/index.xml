@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>goofys on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/goofys/</link>
+    <description>Recent content in goofys on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/goofys/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS KMS&#43;S3 File Storage</title>
+      <link>https://russelltsherman.github.io/secrets/aws-kms-s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/aws-kms-s3/</guid>
+      <description>The AWS KMS+S3 pattern involves provisioning an S3 bucket which enforces encryption at rest together with KMS.
+In geodesic, we use this together with goofys and our s3fs wrapper scripts to mount the encrypted bucket to a local mount point inside the geodesic container. This is an awesome solution for securely storing file-based secrets (e.g. ssh master keys).</description>
+    </item>
+    
+    <item>
+      <title>FUSE</title>
+      <link>https://russelltsherman.github.io/glossary/fuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/fuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>s3fs</title>
+      <link>https://russelltsherman.github.io/glossary/s3fs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/s3fs/</guid>
+      <description>The geodesic implements an s3fs using goofys.</description>
+    </item>
+    
+  </channel>
+</rss>

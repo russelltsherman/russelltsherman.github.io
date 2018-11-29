@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bootstrap on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/bootstrap/</link>
+    <description>Recent content in bootstrap on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alert Components</title>
+      <link>https://russelltsherman.github.io/components/alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/alert/</guid>
+      <description>This is a primary alert—check it out!  This is a secondary alert—check it out!  This is a success alert—check it out!  This is a danger alert—check it out!  This is a warning alert—check it out!  This is a info alert—check it out!  This is a light alert—check it out!  This is a dark alert—check it out!  </description>
+    </item>
+    
+    <item>
+      <title>Badge Components</title>
+      <link>https://russelltsherman.github.io/components/badge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/badge/</guid>
+      <description>Example heading New Example heading New Example heading New Example heading New Example heading New Example heading New </description>
+    </item>
+    
+    <item>
+      <title>Breadcrumb Components</title>
+      <link>https://russelltsherman.github.io/components/breadcrumb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/breadcrumb/</guid>
+      <description>Home Library Data   </description>
+    </item>
+    
+    <item>
+      <title>Button Components</title>
+      <link>https://russelltsherman.github.io/components/button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/button/</guid>
+      <description>Primary Secondary Success Danger Warning Info Light Dark Link</description>
+    </item>
+    
+    <item>
+      <title>Button Group Components</title>
+      <link>https://russelltsherman.github.io/components/button-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/button-group/</guid>
+      <description>Basic example Left Middle Right   Button toolbar 1 2 3 4  5 6 7  8    Sizing Left Middle Right  Left Middle Right  Left Middle Right   Nesting 1 2 Dropdown  Dropdown link Dropdown link     Vertical variation Button Button Dropdown  Dropdown link Dropdown link   Button Button Dropdown  Dropdown link Dropdown link   Dropdown  Dropdown link Dropdown link   Dropdown  Dropdown link Dropdown link     </description>
+    </item>
+    
+    <item>
+      <title>Code Components</title>
+      <link>https://russelltsherman.github.io/components/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/code/</guid>
+      <description>HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; {{- partial &amp;#34;head.html&amp;#34; . -}} &amp;lt;body&amp;gt; {{- partial &amp;#34;header.html&amp;#34; . -}} &amp;lt;div id=&amp;#34;content&amp;#34;&amp;gt; {{- partial &amp;#34;body-beforecontent.html&amp;#34; . -}} {{- block &amp;#34;main&amp;#34; . -}}{{- end -}} {{- partial &amp;#34;body-aftercontent.html&amp;#34; . -}} &amp;lt;/div&amp;gt; {{- partial &amp;#34;footer.html&amp;#34; . -}} {{- partial &amp;#34;debug.html&amp;#34; . -}} &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Go package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello, World!&amp;#34;) } JS (function($, window, undefined){ function ToolTip (){ var targets = $( &amp;#39;.glossarizer_replaced&amp;#39; ), target = false, tooltip = false, title = false; targets.</description>
+    </item>
+    
+    <item>
+      <title>Color Components</title>
+      <link>https://russelltsherman.github.io/components/colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/colors/</guid>
+      <description>Buttons    Primary Secondary Success Info Warning Danger Link Primary Secondary Success Info Warning Danger Link Primary Secondary Success Info Warning Danger Primary  Dropdown link Dropdown link    Success  Dropdown link Dropdown link    Info  Dropdown link Dropdown link    Danger  Dropdown link Dropdown link     Large button Default button Small button   Active  Check  Check    Active  Radio  Radio    Left Middle Right   1 2 3 4  5 6       Navbars  Navbar   Home (current)  Features  Pricing  About   Search     Navbar   Home (current)  Features  Pricing  About   Search     Navbar   Home (current)  Features  Pricing  About   Search        Typography    Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6  Heading with muted text  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</description>
+    </item>
+    
+    <item>
+      <title>Pagination Components</title>
+      <link>https://russelltsherman.github.io/components/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/components/pagination/</guid>
+      <description>Previous 1 2 3 Next    Icons « Previous   1 2 3 » Next      Alignment Previous  1 2 3 Next     </description>
+    </item>
+    
+  </channel>
+</rss>

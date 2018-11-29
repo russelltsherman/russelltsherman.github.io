@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codefresh on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/codefresh/</link>
+    <description>Recent content in codefresh on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/codefresh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Continuous Integration / Continuous Delivery (CI/CD)</title>
+      <link>https://russelltsherman.github.io/glossary/cicd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/cicd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unlimited Staging Environments</title>
+      <link>https://russelltsherman.github.io/glossary/unlimited-staging-environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/unlimited-staging-environments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Secrets with CI/CD</title>
+      <link>https://russelltsherman.github.io/secrets/cicd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/cicd/</guid>
+      <description>We advocate using chamber with all CI/CD pipelines to access secrets. Chamber provides a universal interface and a single &amp;ldquo;system of record&amp;rdquo; for storing and rotating secrets.
+Enabling CI/CD systems to access chamber depends on the CI/CD solution. For CodeBuild/CodePipeline, it&amp;rsquo;s possible to leverage IAM Roles to grant access to KMS+SSM, while for other systems which are external to AWS, it&amp;rsquo;s necessary to provision a chamber IAM user with a very limited scope (the link provides an example for how we do this using terraform).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Calling `chamber write` triggers `Error: InvalidKeyId: ... parameter_store_key is not found.`</title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/syntax.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../css/custom.css" />
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    .article p,
+    .article ul,
+    .article ol,
+    .article blockquote {
+      max-width: 45em;
+    }
+
+    .article p:first-child {
+      font-size: 1.25em;
+      font-weight: 300;
+      max-width: 36em;
+       
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="../../">Russell T Sherman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../about/" title="">About</a>
+            </li>
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../tools/" title="">Tools</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+<nav aria-label="breadcrumb navbar-dark">
+    <ol class="breadcrumb">
+        
+
+
+
+
+
+
+
+ <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/'>Home</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/troubleshooting/'>Troubleshooting</a></li> <li class='breadcrumb-item active' aria-current='page'>Calling <code>chamber write</code> triggers <code>Error: InvalidKeyId: ... parameter_store_key is not found.</code></li>
+
+
+
+
+
+
+    </ol>
+</nav>
+
+
+<div class="container">
+  <h1>Calling <code>chamber write</code> triggers <code>Error: InvalidKeyId: ... parameter_store_key is not found.</code></h1>
+
+  <h2 id="question">Question</h2>
+<pre><code>Error: InvalidKeyId: Alias arn:aws:kms:us-west-2:671362398325:alias/parameter_store_key is not found. (Service: AWSKMS; Status Code: 400; Error Code: NotFoundException; Request ID: bf9b3240-39f5-11e8-921d-e9dc98bd5b1a)
+</code></pre><h2 id="answer">Answer</h2>
+<p>Per the <a href="https://github.com/segmentio/chamber/blob/master/README.md#setting-up-kms">documentation</a>, Chamber expects to find a KMS key with alias <code>parameter_store_key</code> in the account that you are writing/reading secrets.</p>
+<p>You can follow the <a href="http://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html">AWS KMS documentation</a> to create your key, and follow this guide to <a href="http://docs.aws.amazon.com/kms/latest/developerguide/programming-aliases.html">set up your alias</a>.</p>
+<p>We recommend using Terraform:</p>
+<pre><code>resource &quot;aws_kms_key&quot; &quot;parameter_store&quot; {
+  description             = &quot;Parameter store kms master key&quot;
+  deletion_window_in_days = 10
+  enable_key_rotation     = true
+}
+
+resource &quot;aws_kms_alias&quot; &quot;parameter_store_alias&quot; {
+  name          = &quot;alias/parameter_store_key&quot;
+  target_key_id = &quot;${aws_kms_key.parameter_store.id}&quot;
+}
+</code></pre><div class="dialog info">
+  <h4 class="dialog__title"><i class="fa fa-info-circle dialog__icon" aria-hidden="true"></i>Note</h4>
+  <p class="dialog__text">Define <code>CHAMBER_KMS_KEY_ALIAS</code> environment variable to override the default of <code>alias/parameter_store_key</code></p>
+</div>
+<p>Also, we now have a Terraform Module to manage KMS keys: <a href="https://github.com/cloudposse/terraform-aws-kms-key">https://github.com/cloudposse/terraform-aws-kms-key</a></p>
+<pre><code>module &quot;kms_key&quot; {
+  source                  = &quot;git::https://github.com/cloudposse/terraform-aws-kms-key.git?ref=master&quot;
+  namespace               = &quot;cp&quot;
+  stage                   = &quot;prod&quot;
+  name                    = &quot;app&quot;
+  description             = &quot;KMS key for chamber&quot;
+  deletion_window_in_days = 10
+  enable_key_rotation     = &quot;true&quot;
+}
+</code></pre><p>Then tell chamber to use this new key:</p>
+<pre><code>export CHAMBER_KMS_KEY_ALIAS=&quot;alias/cp-prod-app&quot;
+</code></pre>
+</div>
+<div id="navigation" class="container clearfix">
+<div class="float-left">
+        <a class="nav nav-prev" href="../../troubleshooting/aws-vault-error-failed-to-start-credential-server/" title="aws-vault: error: Failed to start credential server">
+            <label>&lt;&lt; aws-vault: error: Failed to start credential server</label>
+        </a>
+    </div>
+    <div class="float-right">
+        <a class="nav nav-next" href="../../troubleshooting/helm-upgrade-failed-to-create-resource/" title="Error: UPGRADE FAILED: failed to create resource: namespaces &#34;...&#34; not found" style="margin-right: 0px;">
+            <label>Error: UPGRADE FAILED: failed to create resource: namespaces &#34;...&#34; not found >></label>
+        </a>
+    </div></div>
+</div><footer class="footer mt-5">
+</footer>
+
+</body>
+</html>

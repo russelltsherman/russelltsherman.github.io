@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html><head>
+  <title>AWS Vault</title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/syntax.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../css/custom.css" />
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    .article p,
+    .article ul,
+    .article ol,
+    .article blockquote {
+      max-width: 45em;
+    }
+
+    .article p:first-child {
+      font-size: 1.25em;
+      font-weight: 300;
+      max-width: 36em;
+       
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-default navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="../../">Russell T Sherman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../about/" title="">About</a>
+            </li>
+            
+            <li
+                class="navbar-item ">
+                <a class="nav-link" href="../../tools/" title="">Tools</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container">
+<nav aria-label="breadcrumb navbar-dark">
+    <ol class="breadcrumb">
+        
+
+
+
+
+
+
+
+ <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/'>Home</a></li> <li class='breadcrumb-item'><a href='https://russelltsherman.github.io/tools/'>Tools</a></li> <li class='breadcrumb-item active' aria-current='page'>AWS Vault</li>
+
+
+
+
+
+
+    </ol>
+</nav>
+
+
+<div class="container">
+  <h1>AWS Vault</h1>
+
+  <p>The <a href="https://github.com/99designs/aws-vault"><code>aws-vault</code></a> command line tool by <a href="https://99designs.com/">99 Designs</a> is a utility for securely storing and accessing encrypted AWS credentials for use in development environments. This tool makes it extremely easy to work with IAM assumed roles across multiple AWS organizations.</p>
+<div class="dialog info">
+  <h4 class="dialog__title"><i class="fa fa-info-circle dialog__icon" aria-hidden="true"></i>Info</h4>
+  <p class="dialog__text"><code>aws-vault</code> has no relationship to the HashiCorp Vault.</p>
+</div>
+<p>Features:</p>
+<ul>
+<li>Encrypted vault for IAM credentials (OSX KeyChain or file)</li>
+<li>IAM Metadata server (mocks the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">EC2 API</a>) to simulate instance profiles for local development</li>
+<li>Prompts for MFA Token</li>
+<li>Variable-length session TTLs</li>
+<li>Compatible with <code>~/.aws/config</code></li>
+<li>Automatic logins to AWS Web Console</li>
+</ul>
+<div class="dialog info">
+  <h4 class="dialog__title"><i class="fa fa-info-circle dialog__icon" aria-hidden="true"></i>Note</h4>
+  <p class="dialog__text">This has been incorporated into our latest release of <a href="">geodesic</a>.</p>
+</div>
+<h1 id="installation">Installation</h1>
+<p>You can install <code>aws-vault</code> locally, allowing you to authorize to AWS and perform AWS cli actions.</p>
+<h2 id="osx-installation">OSX Installation</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew cask install aws-vault
+</code></pre></div><h2 id="linux-installation-binary">Linux Installation (binary)</h2>
+<p>Download the precompiled binary from the GitHub releases page, unless a package exists for your distro.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo curl -L -o /usr/local/bin/aws-vault https://github.com/99designs/aws-vault/releases/download/v4.2.0/aws-vault-linux-amd64
+sudo chmod <span style="color:#ae81ff">755</span> /usr/local/bin/aws-vault
+</code></pre></div><h2 id="local-configuration">Local Configuration</h2>
+<p>We recommend using the <code>file</code> type backend for <code>aws-vault</code> because this is compatible with Linux, which is needed for <a href="../../geodesic">Geodesic</a> sessions.</p>
+<p>Add the following to your <code>~/.bashrc</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export AWS_VAULT_BACKEND<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;file&#34;</span>
+</code></pre></div><p>Then <code>source ~/.bashrc</code> to update your current session.</p>
+<ol>
+<li>Generate IAM Access Key ID/Secret on your AWS root account via IAM management page in the AWS Console.</li>
+</ol>
+<div class="dialog important">
+  <h4 class="dialog__title"><i class="fa fa fa-exclamation-triangle dialog__icon" aria-hidden="true"></i>Important</h4>
+  <p class="dialog__text">Do not define the source profile in <code>~/.aws/credentials</code>; we&rsquo;re going to use <code>aws-vault add</code> for that.</p>
+</div>
+<ol start="2">
+<li>Using the IAM Access Key ID/Secret generated in Step 1, add the <code>source_profile</code>:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ aws-vault add example
+</code></pre></div><ol start="3">
+<li>Add the <code>source_profile</code> created in Step 2 to your <code>~/.aws/config</code>.</li>
+</ol>
+<pre><code>[profile example]
+region=us-west-2
+</code></pre><ol start="4">
+<li>Setup your <code>~/.aws/config</code> by adding a profile entry for each AWS account:
+<div class="dialog important">
+</li>
+</ol>
+  <h4 class="dialog__title"><i class="fa fa fa-exclamation-triangle dialog__icon" aria-hidden="true"></i>Important</h4>
+  <p class="dialog__text">Remember to replace the <code>$aws_account_id</code>s with your account ids and <code>user@example.com</code> with your IAM username below. We recommend using email addresses for all IAM user accounts associated with human users.</p>
+</div>
+<pre><code>[profile example-staging-admin]
+region=us-west-2
+role_arn=arn:aws:iam::$aws_account_id_for_staging:role/OrganizationAccountAccessRole
+mfa_serial=arn:aws:iam::$aws_account_id_for_root:mfa/user@example.com
+source_profile=example
+</code></pre><ol start="5">
+<li>Test that it is all set up properly:</li>
+</ol>
+<pre><code>$ aws-vault login example-staging-admin
+</code></pre><p>This should open a browser and log you into the AWS console as the assumed role <code>example-staging-admin</code>.</p>
+<h1 id="using-with-geodesic">Using with Geodesic</h1>
+<p><code>aws-vault</code> is available in the geodesic shell. To start the shell, run:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$CLUSTER_NAME
+</code></pre></div><h1 id="add-your-profile-to-aws-vault">Add your profile to AWS Vault</h1>
+<p>Now we are ready to configure your AWS credentials. To add your AWS credentials to the encrypted vault run the following command. Remember to replace <code>example</code> with your source profile name.</p>
+<pre><code>aws-vault add example
+</code></pre><h1 id="troubleshooting">Troubleshooting</h1>
+<p>Most problems stem from misconfiguration.</p>
+<ul>
+<li><strong>Do not</strong> define a <code>[default]</code> profile in <code>~/.aws/credentials</code> or <code>[profile default]</code> in <code>~/aws/config</code></li>
+<li><strong>Do not</strong> set <code>AWS_SDK_LOAD_CONFIG</code></li>
+<li><strong>Do not</strong> set <code>AWS_SHARED_CREDENTIALS_FILE</code></li>
+</ul>
+<p>If using <code>--server</code> mode, ensure the following credentials are not exported:</p>
+<div class="dialog important">
+  <h4 class="dialog__title"><i class="fa fa fa-exclamation-triangle dialog__icon" aria-hidden="true"></i>Important</h4>
+  <p class="dialog__text">Since running <code>aws-vault</code> using <code>--server</code> binds to the <code>169.254.169.254</code> local ip address to mock the AWS metadata server, you can run only one process per host machine. More info can be found <a href="">here</a>.</p>
+</div>
+<ul>
+<li><code>AWS_ACCESS_KEY_ID</code></li>
+<li><code>AWS_SECRET_ACCESS_KEY</code></li>
+<li><code>AWS_SECURITY_TOKEN</code></li>
+<li><code>AWS_SESSION_TOKEN</code></li>
+</ul>
+<p>Use <code>unset</code> to delete each of the above variables from your environment and ensure they aren&rsquo;t exported in your <code>~/.bashrc</code> or <code>~/.profile</code>.</p>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="https://github.com/FernandoMiguel/aws-vault-quick-guide">https://github.com/FernandoMiguel/aws-vault-quick-guide</a></li>
+<li><a href="https://github.com/99designs/aws-vault">https://github.com/99designs/aws-vault</a></li>
+</ul>
+
+</div>
+<div id="navigation" class="container clearfix">
+<div class="float-left">
+        <a class="nav nav-prev" href="../../tools/aws-cli/" title="AWS Cli">
+            <label>&lt;&lt; AWS Cli</label>
+        </a>
+    </div>
+    <div class="float-right">
+        <a class="nav nav-next" href="../../tools/chamber/" title="Chamber" style="margin-right: 0px;">
+            <label>Chamber >></label>
+        </a>
+    </div></div>
+</div><footer class="footer mt-5">
+</footer>
+
+</body>
+</html>

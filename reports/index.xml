@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reports on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/reports/</link>
+    <description>Recent content in Reports on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/reports/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bevager Reports</title>
+      <link>https://russelltsherman.github.io/reports/bevager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/reports/bevager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logi Reports</title>
+      <link>https://russelltsherman.github.io/reports/logi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/reports/logi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RSI Reports</title>
+      <link>https://russelltsherman.github.io/reports/rsi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/reports/rsi/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

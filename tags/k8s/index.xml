@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>k8s on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/k8s/</link>
+    <description>Recent content in k8s on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Helm</title>
+      <link>https://russelltsherman.github.io/glossary/helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/helm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helm Chart</title>
+      <link>https://russelltsherman.github.io/glossary/helm-chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/helm-chart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helmfile</title>
+      <link>https://russelltsherman.github.io/tools/helmfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/helmfile/</guid>
+      <description>We use helmfile to deploy collections of charts as part of geodesic. The helmfile.yaml is a declarative configuration file that makes it easier to deploy and manage a large number of helm charts.
+Another way to think about it is like this:
+ If helm is responsible for deploying a single application to kubernetes, then helmfile is responsible for deploying multiple applications by calling helm.
+ Features  12-Factor Style Configurations - Parameterize all charts using Environment Variables Inline values.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Ops (kops)</title>
+      <link>https://russelltsherman.github.io/glossary/kops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/kops/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

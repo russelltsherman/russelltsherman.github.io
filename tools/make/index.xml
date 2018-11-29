@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Makefile on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tools/make/</link>
+    <description>Recent content in Makefile on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tools/make/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Makefile Best Practices</title>
+      <link>https://russelltsherman.github.io/tools/make/best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/make/best-practices/</guid>
+      <description>Avoid using Evals The use of $(eval ...) leads to very confusing execution paths, due to the way make evaluates a target. When make executes a target, it preprocesses all $(....) interpolations and renders the template. After that, it executes, line-by-line each command in the target.
+Namespace targets Over time, the number of targets in a Makefile will grow. We recommend namespacing all targets.
+For example:
+docker/build: docker build -t example/test .</description>
+    </item>
+    
+    <item>
+      <title>Makefile Examples</title>
+      <link>https://russelltsherman.github.io/tools/make/makefile-examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/tools/make/makefile-examples/</guid>
+      <description>IMPORTANT: All leading whitespace should be tabbed (^T)
+Help Target Our standard help target. This will automatically generate well-formatted output for any target that has a ## comment preceding it.
+Simply add this code snippet to your Makefile and you&amp;rsquo;ll get this functionality.
+## This help screen help: @printf &amp;quot;Available targets:\n\n&amp;quot; @awk &#39;/^[a-zA-Z\-\_0-9%:\\]+/ { \ helpMessage = match(lastLine, /^## (.*)/); \ if (helpMessage) { \ helpCommand = $$1; \ helpMessage = substr(lastLine, RSTART + 3, RLENGTH); \ gsub(&amp;quot;\\\\&amp;quot;, &amp;quot;&amp;quot;, helpCommand); \ gsub(&amp;quot;:+$$&amp;quot;, &amp;quot;&amp;quot;, helpCommand); \ printf &amp;quot; \x1b[32;01m%-35s\x1b[0m %s\n&amp;quot;, helpCommand, helpMessage; \ } \ } \ { lastLine = $$0 }&#39; $(MAKEFILE_LIST) | sort -u @printf &amp;quot;\n&amp;quot; Default target Add this to the top of your Makefile to automatically call help if no target passed.</description>
+    </item>
+    
+  </channel>
+</rss>

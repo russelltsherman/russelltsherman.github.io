@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI/CD on Russell T Sherman</title>
+    <link>https://russelltsherman.github.io/tags/ci/cd/</link>
+    <description>Recent content in CI/CD on Russell T Sherman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://russelltsherman.github.io/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CodeBuild</title>
+      <link>https://russelltsherman.github.io/glossary/code-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/code-build/</guid>
+      <description>CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue. Because CodeBuild runs in AWS, it can leverage IAM Instance Profiles to assume roles to securely provision resources without exposing AWS access credentials.</description>
+    </item>
+    
+    <item>
+      <title>Codefresh</title>
+      <link>https://russelltsherman.github.io/glossary/codefresh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/codefresh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Delivery (CD)</title>
+      <link>https://russelltsherman.github.io/glossary/continuous-delivery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/continuous-delivery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration (CI)</title>
+      <link>https://russelltsherman.github.io/glossary/continuous-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/continuous-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Release Engineering</title>
+      <link>https://russelltsherman.github.io/glossary/release-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/glossary/release-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Secrets with CI/CD</title>
+      <link>https://russelltsherman.github.io/secrets/cicd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://russelltsherman.github.io/secrets/cicd/</guid>
+      <description>We advocate using chamber with all CI/CD pipelines to access secrets. Chamber provides a universal interface and a single &amp;ldquo;system of record&amp;rdquo; for storing and rotating secrets.
+Enabling CI/CD systems to access chamber depends on the CI/CD solution. For CodeBuild/CodePipeline, it&amp;rsquo;s possible to leverage IAM Roles to grant access to KMS+SSM, while for other systems which are external to AWS, it&amp;rsquo;s necessary to provision a chamber IAM user with a very limited scope (the link provides an example for how we do this using terraform).</description>
+    </item>
+    
+  </channel>
+</rss>
